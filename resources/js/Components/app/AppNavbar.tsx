@@ -33,7 +33,7 @@ const Navbar = () => {
                     <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-700">
                         <Link href="/" className="hover:text-primary">Home</Link>
                         <Link href="/explore" className="hover:text-primary">Explore</Link>
-                        <Link href="/company" className="hover:text-primary">Packages</Link>
+                        <Link href="/company" className="hover:text-primary">Travel</Link>
                         <Link href="#testimonial" className="hover:text-primary">Testimonial</Link>
                         <Link href="#faq" className="hover:text-primary">FAQ</Link>
                     </div>

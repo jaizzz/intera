@@ -15,11 +15,9 @@ export default function HeroSection() {
 
     const categories = [
         "Nature",
-        "Beach",
         "Mountain",
         "Culture",
         "City",
-        "Culinary",
     ];
 
     return (
@@ -29,7 +27,7 @@ export default function HeroSection() {
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
                     backgroundImage:
-                        "url('https://images.unsplash.com/photo-1501785888041-af3ef285b470')",
+                        "url('/images/destination/kaizumi.webp')"
                 }}
             >
                 <div className="absolute inset-0 bg-black/50" />
