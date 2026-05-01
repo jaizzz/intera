@@ -1,26 +1,36 @@
 import { useState } from "react";
+import { Link } from "@inertiajs/react";
 import Button from "@/Components/ui/button/Button";
 
+import Travel1 from "../../../assets/img/travel/travel-indo-1.jpg"
+import Travel2 from "../../../assets/img/travel/travel-indo-2.jpg"
+import Travel3 from "../../../assets/img/travel/travel-indo-3.jpg"
+import Travel4 from "../../../assets/img/travel/travel-japan-1.jpg"
+import Travel5 from "../../../assets/img/travel/travel-japan-2.jpg"
+import Travel6 from "../../../assets/img/travel/travel-japan-3.jpg"
+
 export default function DestinationPackageSection() {
-    const [activeTab, setActiveTab] = useState<"indonesia" | "japan">("indonesia");
+    const [activeTab, setActiveTab] = useState<"indonesia" | "japan">(
+        "indonesia",
+    );
 
     const data = {
         indonesia: {
             description:
-                "Explore a wide range of curated travel packages across Indonesia, designed to showcase breathtaking nature, stunning beaches, and rich cultural experiences in one well-planned journey.",
+                "Connect with Indonesia's leading travel agencies that specialize in cultural tours, island hopping, and volcanic adventures across the archipelago. We partner with local experts to ensure your journey is authentic and seamless.",
             images: [
-                "https://images.unsplash.com/photo-1540541338287-41700207dee6",
-                "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?q=80&w=1170&auto=format&fit=crop",
-                "https://images.unsplash.com/photo-1519824145371-296894a0daa9",
+                Travel1,
+                Travel2,
+                Travel3
             ],
         },
         japan: {
             description:
-                "Discover thoughtfully crafted travel packages in Japan that blend modern cities, mountain landscapes, and traditional culture, offering a seamless and memorable travel experience.",
+                "Collaborate with Japan's top travel experts to experience the perfect blend of high-tech cities, serene temples, and seasonal wonders. Our partners provide personalized itineraries to help you discover the hidden gems of Japan.",
             images: [
-                "https://images.unsplash.com/photo-1503899036084-c55cdd92da26",
-                "https://images.unsplash.com/photo-1528164344705-47542687000d",
-                "https://images.unsplash.com/photo-1549693578-d683be217e58",
+                Travel4,
+                Travel5,
+                Travel6,
             ],
         },
     };
@@ -29,17 +39,16 @@ export default function DestinationPackageSection() {
 
     return (
         <section className="py-20 px-6 lg:px-20 bg-white">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
                 {/* Image Stack */}
                 <div className="relative w-full max-w-xl mx-auto">
-
                     {/* Main Image */}
                     <div className="aspect-16/10 rounded-3xl overflow-hidden shadow-lg">
                         <img
                             src={content.images[0]}
                             alt="Destination Package"
                             className="w-full h-full object-cover"
+                            loading="lazy"
                         />
                     </div>
 
@@ -49,6 +58,7 @@ export default function DestinationPackageSection() {
                             src={content.images[1]}
                             alt="Travel Experience"
                             className="w-full h-full object-cover"
+                            loading="lazy"
                         />
                     </div>
 
@@ -58,23 +68,25 @@ export default function DestinationPackageSection() {
                             src={content.images[2]}
                             alt="Tour Destination"
                             className="w-full h-full object-cover"
+                            loading="lazy"
                         />
                     </div>
                 </div>
 
                 {/* Content */}
                 <div>
-                    <p className="text-sm text-gray-400 mb-2">
-                        Curated Travel Experiences
+                    <p className="text-sm text-gray-400 mt-4 sm:mt-0 mb-2">
+                        Trusted Travel Partners
                     </p>
 
                     <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                        Find The Perfect <br /> <span className="text-primary">Destination Package</span>
+                        Seamless Planning with <br />{" "}
+                        <span className="text-primary">Expert Agencies</span>
                     </h2>
 
                     {/* Tabs */}
                     <div className="flex items-center gap-6 mt-6 border-b border-gray-200">
-                        {(["indonesia", "japan"] as const).map(tab => (
+                        {(["indonesia", "japan"] as const).map((tab) => (
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
@@ -95,9 +107,9 @@ export default function DestinationPackageSection() {
                     </p>
 
                     {/* CTA */}
-                    <Button className="mt-8">
-                        View All Packages
-                    </Button>
+                    <Link href={"/travel"}>
+                        <Button className="mt-8">View All Agencies</Button>
+                    </Link>
                 </div>
             </div>
         </section>
