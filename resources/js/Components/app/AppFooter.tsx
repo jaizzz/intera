@@ -14,11 +14,12 @@ export default function AppFooter() {
                     </div>
 
                     <p className="max-w-sm text-sm text-white/80 leading-relaxed">
-                        Plan your next adventure, book effortlessly, and enjoy
-                        exclusive deals—all in one app.
+                        Banjarnegara, Jawa Tengah, Indonesia.
+                        <br />
+                        Ohnan Town, Shimane Prefecture, Japan.
                     </p>
 
-                    <div className="flex items-center gap-4 pt-2">
+                    {/* <div className="flex items-center gap-4 pt-2">
                         <a
                             href="#"
                             className="w-9 h-9 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-[#177E80] transition"
@@ -37,10 +38,10 @@ export default function AppFooter() {
                         >
                             <FaFacebookF />
                         </a>
-                    </div>
+                    </div> */}
                 </div>
 
-                <div className="grid grid-cols-3 gap-8">
+                <div className="grid grid-cols-2 gap-2">
                     {/* Pages */}
                     <div>
                         <h3 className="font-semibold mb-4">Pages</h3>
@@ -63,7 +64,7 @@ export default function AppFooter() {
                         </ul>
                     </div>
 
-                    {/* More */}
+                    {/* More
                     <div>
                         <h3 className="font-semibold mb-4">More</h3>
                         <ul className="space-y-3 text-sm text-white/80">
@@ -71,19 +72,20 @@ export default function AppFooter() {
                             <li><a href="#" className="hover:text-white">Events</a></li>
                             <li><a href="#" className="hover:text-white">Term & Conditions</a></li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
             {/* Bottom Bar */}
             <div className="border-t border-white/20">
-                <div className="px-6 lg:px-12 py-4 mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-white/70 gap-3">
-                    <div className="flex items-center gap-6">
+                <div className="px-6 lg:px-12 py-4 mx-auto flex flex-col items-center justify-center text-sm text-white/70 gap-4">
+                    
+                    <p>© {new Date().getFullYear()} Intera. All rights reserved.</p>
+                    
+                    {/* <div className="flex items-center gap-6">
                         <a href="#" className="hover:text-white">Privacy Policy</a>
                         <a href="#" className="hover:text-white">Term of Service</a>
-                    </div>
-
-                    <p>© {new Date().getFullYear()} Intera. All rights reserved.</p>
+                    </div> */}
                 </div>
             </div>
         </footer>

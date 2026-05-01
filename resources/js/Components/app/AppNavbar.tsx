@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "@inertiajs/react";
+import { useState, useEffect } from "react";
+import { Link, usePage } from "@inertiajs/react";
 import Button from "@/Components/ui/button/Button";
 import { HiMenuAlt3, HiX, HiChevronDown } from "react-icons/hi";
 
@@ -12,11 +12,55 @@ const LANGUAGES = [
 ];
 
 const Navbar = () => {
+    const { url } = usePage();
     const [openMenu, setOpenMenu] = useState(false);
     const [openLang, setOpenLang] = useState(false);
     const [language, setLanguage] = useState("en");
+    const [activeSection, setActiveSection] = useState("");
 
     const selectedLang = LANGUAGES.find(l => l.code === language);
+
+    const isHomeActive = url === "/" || url === "/#";
+    const isExploreActive = url.startsWith("/explore") || url.startsWith("/destination");
+    const isTravelActive = url.startsWith("/travel");
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.location.pathname !== "/") {
+                setActiveSection("");
+                return;
+            }
+
+            if (window.scrollY < 100) {
+                setActiveSection("");
+                return;
+            }
+
+            const sections = ["testimonial", "faq"];
+            let currentSection = "";
+
+            sections.forEach((section) => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    const absoluteTop = rect.top + window.scrollY;
+                    const offsetTop = absoluteTop - 200;
+                    const height = element.offsetHeight;
+                    
+                    if (window.scrollY >= offsetTop && window.scrollY < offsetTop + height) {
+                        currentSection = section;
+                    }
+                }
+            });
+
+            setActiveSection(currentSection);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll();
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [url]);
 
     return (
         <nav className="fixed top-4 lg:top-6 left-0 w-full z-50">
@@ -31,11 +75,11 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-700">
-                        <Link href="/" className="hover:text-primary">Home</Link>
-                        <Link href="/explore" className="hover:text-primary">Explore</Link>
-                        <Link href="/company" className="hover:text-primary">Packages</Link>
-                        <Link href="#testimonial" className="hover:text-primary">Testimonial</Link>
-                        <Link href="#faq" className="hover:text-primary">FAQ</Link>
+                        <Link href="/" className={`hover:text-primary transition-colors ${isHomeActive && !activeSection ? "text-primary font-bold" : ""}`}>Home</Link>
+                        <Link href="/explore" className={`hover:text-primary transition-colors ${isExploreActive ? "text-primary font-bold" : ""}`}>Explore</Link>
+                        <Link href="/travel" className={`hover:text-primary transition-colors ${isTravelActive ? "text-primary font-bold" : ""}`}>Travel</Link>
+                        <Link href="/#faq" className={`hover:text-primary transition-colors ${activeSection === "faq" ? "text-primary font-bold" : ""}`}>FAQ</Link>
+                        <Link href="/#testimonial" className={`hover:text-primary transition-colors ${activeSection === "testimonial" ? "text-primary font-bold" : ""}`}>Testimonial</Link>
                     </div>
 
                     {/* Desktop Right */}
@@ -127,17 +171,21 @@ const Navbar = () => {
                         {/* Menu Links */}
                         <div className="flex flex-col px-5 py-4 space-y-3 text-sm">
                             {[
-                                { href: "/", label: "Home" },
-                                { href: "/explore", label: "Explore" },
-                                { href: "/company", label: "Company" },
-                                { href: "/testimonial", label: "Testimonial" },
-                                { href: "/faq", label: "FAQ" },
+                                { href: "/", label: "Home", active: isHomeActive && !activeSection },
+                                { href: "/explore", label: "Explore", active: isExploreActive },
+                                { href: "/travel", label: "Travel", active: isTravelActive },
+                                { href: "/#faq", label: "FAQ", active: activeSection === "faq" },
+                                { href: "/#testimonial", label: "Testimonial", active: activeSection === "testimonial" },
                             ].map(item => (
                                 <Link
                                     key={item.href}
                                     href={item.href}
                                     onClick={() => setOpenMenu(false)}
-                                    className="px-4 py-3 rounded-sm hover:bg-gray-100"
+                                    className={`px-4 py-3 rounded-lg transition-colors ${
+                                        item.active 
+                                        ? "bg-primary/10 text-primary font-bold" 
+                                        : "hover:bg-gray-100 text-gray-700"
+                                    }`}
                                 >
                                     {item.label}
                                 </Link>

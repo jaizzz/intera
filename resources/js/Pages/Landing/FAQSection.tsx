@@ -4,38 +4,38 @@ import { HiPlus, HiX } from "react-icons/hi";
 export default function FAQSection() {
     const faqs = [
         {
-            question: "How does the app work?",
+            question: "Apa itu Intera?",
             answer:
-                "Intera allows you to explore destinations, compare travel packages, and book trips seamlessly through one intuitive platform.",
+                "International Tourism Exchange Application (INTERA) adalah platform eksplorasi destinasi wisata yang membantu Anda menemukan tempat-tempat terbaik di Indonesia dan Jepang, serta menghubungkan Anda dengan agensi travel terpercaya.",
         },
         {
-            question: "Can I use the app offline?",
+            question: "Bagaimana cara mencari destinasi tertentu?",
             answer:
-                "Yes, you can access saved trips and itineraries offline, although booking and updates require an internet connection.",
+                "Anda dapat menggunakan halaman 'Explore' untuk mencari destinasi. Gunakan fitur filter untuk menyaring hasil berdasarkan negara atau kategori seperti Nature, Heritage, Volcanic, dan lainnya.",
         },
         {
-            question: "What payment options do you offer?",
+            question: "Bagaimana cara memesan layanan travel?",
             answer:
-                "We offer secure payment methods including credit cards, digital wallets, and bank transfers for a smooth and convenient transaction experience.",
+                "Di halaman 'Travel', Anda dapat melihat daftar agensi partner kami. Klik tombol 'Contact' untuk menghubungi mereka secara langsung melalui telepon untuk informasi pemesanan lebih lanjut.",
         },
         {
-            question: "Are there any fees for cancellations?",
+            question: "Apakah Intera memungut biaya dari pengguna?",
             answer:
-                "Cancellation fees depend on the package provider and timing. Details are always shown clearly before you confirm your booking.",
+                "Tidak, Intera adalah platform kurasi dan eksplorasi yang dapat digunakan secara gratis oleh wisatawan untuk mencari inspirasi perjalanan dan informasi agensi.",
         },
         {
-            question: "How do I find travel deals?",
+            question: "Apakah informasi destinasi akurat?",
             answer:
-                "You can find the best deals by browsing featured destinations, seasonal promotions, and exclusive offers available in the app.",
+                "Kami melakukan kurasi mendalam terhadap setiap destinasi dan agensi yang terdaftar. Namun, kami menyarankan untuk selalu mengonfirmasi detail operasional langsung dengan penyedia layanan.",
         },
         {
-            question: "Is customer support available 24/7?",
+            question: "Bagaimana jika saya ingin mendaftarkan agensi saya?",
             answer:
-                "Yes, our customer support team is available 24/7 to assist you with bookings, payments, and travel-related inquiries.",
+                "Kami sangat terbuka untuk kemitraan baru. Anda dapat menghubungi tim dukungan kami melalui fitur chat untuk informasi mengenai pendaftaran agensi travel Anda di platform kami.",
         },
     ];
 
-    const [activeIndex, setActiveIndex] = useState(2);
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     return (
         <section id="faq" className="py-20 px-4 lg:px-12 bg-gray-50">
@@ -60,7 +60,7 @@ export default function FAQSection() {
                         >
                             <button
                                 onClick={() =>
-                                    setActiveIndex(isOpen ? 0 : index)
+                                    setActiveIndex(isOpen ? null : index)
                                 }
                                 className="w-full flex items-center justify-between px-6 py-5 text-left"
                             >

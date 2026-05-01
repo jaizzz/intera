@@ -1,5 +1,10 @@
-import { FaWhatsapp } from "react-icons/fa";
 import Button from "@/Components/ui/button/Button";
+import { FaWhatsapp } from "react-icons/fa";
+
+import CTA1 from "../../../assets/img/cta/cta-1.jpg";
+import CTA2 from "../../../assets/img/cta/cta-2.jpg";
+import CTA3 from "../../../assets/img/cta/cta-3.jpg";
+import CTA4 from "../../../assets/img/cta/cta-4.jpg";
 
 export default function CTASection() {
     const whatsappNumber = "6281234567890";
@@ -12,7 +17,7 @@ export default function CTASection() {
 
     return (
         <section className="py-20 px-6 lg:px-20">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
                 {/* Image Polaroid Stack */}
                 <div className="relative w-full max-w-md mx-auto h-105">
@@ -21,7 +26,7 @@ export default function CTASection() {
                     <div className="absolute top-0 left-6 rotate-[-4deg] z-10">
                         <div className="bg-white p-3 rounded-lg shadow-lg w-44 sm:w-52">
                             <img
-                                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                                src={CTA3}
                                 alt="Destination 1"
                                 className="w-full h-56 object-cover rounded-md"
                             />
@@ -32,7 +37,7 @@ export default function CTASection() {
                     <div className="absolute top-4 right-4 rotate-3 z-20">
                         <div className="bg-white p-3 rounded-lg shadow-lg w-44 sm:w-52">
                             <img
-                                src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1"
+                                src={CTA4}
                                 alt="Destination 2"
                                 className="w-full h-56 object-cover rounded-md"
                             />
@@ -43,7 +48,7 @@ export default function CTASection() {
                     <div className="absolute bottom-0 left-0 rotate-2 z-30">
                         <div className="bg-white p-3 rounded-lg shadow-lg w-48 sm:w-56">
                             <img
-                                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                                src={CTA1}
                                 alt="Destination 3"
                                 className="w-full h-60 object-cover rounded-md"
                             />
@@ -54,7 +59,7 @@ export default function CTASection() {
                     <div className="absolute bottom-6 right-8 -rotate-2 z-40">
                         <div className="bg-white p-3 rounded-lg shadow-lg w-40 sm:w-48">
                             <img
-                                src="https://images.unsplash.com/photo-1540541338287-41700207dee6"
+                                src={CTA2}
                                 alt="Destination 4"
                                 className="w-full h-52 object-cover rounded-md"
                             />

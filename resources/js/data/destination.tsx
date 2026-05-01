@@ -1,0 +1,245 @@
+export const DESTINATIONS = [
+    {
+        id: "8f3c2a1d-7b9e-4f2a-9c5d-1a2b3c4d5e6f",
+        title: "Kawah Sikidang",
+        country: "Dieng, Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Nature",
+        description: "Kawah Sikidang merupakan kawah vulkanik aktif yang paling mudah diakses di kawasan Dieng. Aktivitas geotermalnya terlihat jelas melalui semburan uap panas dan kolam lumpur mendidih yang berpindah-pindah. Fenomena ini menjadikannya objek edukatif sekaligus menarik secara visual. Pengunjung juga dapat mencoba merebus telur di kawah kecil sebagai pengalaman unik.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "07:00 - 17:00 WIB", hargaTiket: "Rp 20.000" },
+        facilities: ["Area Parkir","Toilet","Warung Makan","Spot Foto","Toko Souvenir"]
+    },
+    {
+        id: "a7b8c9d0-e1f2-4a3b-8c7d-9e0f1a2b3c4d",
+        title: "Kompleks Candi Arjuna",
+        country: "Dieng, Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Historical",
+        description: "Kompleks Candi Arjuna merupakan peninggalan Hindu kuno yang diperkirakan berasal dari abad ke-7. Dikelilingi lanskap pegunungan dan kabut tipis khas Dieng, kawasan ini memberikan suasana sakral sekaligus menenangkan. Selain nilai sejarahnya, lokasi ini sering digunakan untuk kegiatan budaya dan fotografi.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "07:00 - 17:00 WIB", hargaTiket: "Rp 20.000" },
+        facilities: ["Pusat Informasi","Area Pejalan Kaki","Toilet","Spot Foto","Taman"]
+    },
+    {
+        id: "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+        title: "Telaga Warna",
+        country: "Dieng, Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Nature",
+        description: "Telaga Warna dikenal karena fenomena perubahan warna airnya yang dipengaruhi kandungan mineral dan cahaya matahari. Kombinasi warna hijau, kuning, dan kebiruan menciptakan pemandangan unik. Area sekitar telaga juga menyediakan jalur trekking ringan dengan panorama hutan dan pegunungan.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "06:30 - 16:30 WIB", hargaTiket: "Rp 22.000 (Domestik) / Rp 169.000 (Mancanegara)" },
+        facilities: ["Jalur Trekking","Gazebo","Toilet","Warung Makan","Spot Foto"]
+    },
+    {
+        id: "c4d5e6f7-a8b9-4c0d-1e2f-3a4b5c6d7e8f",
+        title: "Bukit Sikunir",
+        country: "Dieng, Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Adventure",
+        description: "Bukit Sikunir menjadi lokasi populer untuk menikmati matahari terbit dengan panorama pegunungan. Pendakian relatif singkat namun memberikan hasil pemandangan spektakuler berupa lautan awan dan siluet gunung. Waktu terbaik berkunjung adalah dini hari.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "02:00 - 18:00 WIB", hargaTiket: "Rp 15.000" },
+        facilities: ["Area Parkir","Mushola","Warung","Toilet","Jalur Pendakian"]
+    },
+    {
+        id: "d9e0f1a2-b3c4-4d5e-6f7a-8b9c0d1e2f3a",
+        title: "Arung Jeram Sungai Serayu",
+        country: "Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Adventure",
+        description: "Sungai Serayu menawarkan aktivitas arung jeram dengan berbagai tingkat kesulitan. Selain memacu adrenalin, pengunjung dapat menikmati pemandangan alam berupa tebing hijau dan area persawahan. Aktivitas ini dikelola secara profesional dengan standar keselamatan.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "08:00 - 16:00 WIB", hargaTiket: "Mulai Rp 200.000" },
+        facilities: ["Peralatan","Pemandu","Basecamp","Kamar Bilas","Restoran"]
+    },
+    {
+        id: "e4f5a6b7-c8d9-4e0f-1a2b-3c4d5e6f7a8b",
+        title: "TRMS Serulingmas",
+        country: "Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Recreation",
+        description: "TRMS Serulingmas merupakan taman rekreasi sekaligus kebun binatang yang menyediakan edukasi satwa. Fasilitas tambahan seperti kolam renang dan taman bermain menjadikannya cocok untuk keluarga. Lingkungannya tertata dengan konsep wisata edukatif.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "07:00 - 16:00 WIB", hargaTiket: "Rp 20.000" },
+        facilities: ["Kandang Satwa","Kolam Renang","Taman Bermain","Toilet","Parkir"]
+    },
+    {
+        id: "f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c",
+        title: "Surya Yudha Park",
+        country: "Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Recreation",
+        description: "Surya Yudha Park adalah taman wisata terpadu dengan fasilitas waterpark, bioskop, dan hotel. Tempat ini dirancang sebagai destinasi hiburan keluarga dengan berbagai wahana menarik dan fasilitas lengkap.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "08:00 - 17:00 WIB", hargaTiket: "Rp 25.000 - 35.000" },
+        facilities: ["Waterpark","Bioskop","Hotel","Kafetaria","Loker"]
+    },
+    {
+        id: "a9b8c7d6-e5f4-4a3b-2c1d-0e9f8a7b6c5d",
+        title: "Telaga Merdada",
+        country: "Dieng, Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Nature",
+        description: "Telaga Merdada merupakan telaga terluas di Dieng yang terbentuk dari cekungan alami. Airnya berasal dari curah hujan, sehingga memberikan tampilan tenang dan luas. Dikelilingi area pertanian, tempat ini cocok untuk relaksasi.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "07:00 - 16:00 WIB", hargaTiket: "Rp 5.000" },
+        facilities: ["Parkir","Perahu","Tempat Duduk","Toilet","Warung"]
+    },
+    {
+        id: "b8c7d6e5-f4a3-4b2c-1d0e-9f8a7b6c5d4e",
+        title: "Sumur Jalatunda",
+        country: "Dieng, Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Historical",
+        description: "Sumur Jalatunda adalah kawah berbentuk sumur raksasa yang memiliki nilai mitologi tinggi. Kedalamannya yang ekstrem dan cerita legenda menjadikannya objek wisata unik. Pengunjung sering mencoba melempar batu sebagai bagian dari tradisi.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "07:00 - 17:00 WIB", hargaTiket: "Rp 5.000" },
+        facilities: ["Parkir","Tangga","Penjual Batu","Toilet"]
+    },
+    {
+        id: "c7d6e5f4-a3b2-4c1d-0e9f-8a7b6c5d4e3f",
+        title: "Kawah Candradimuka",
+        country: "Dieng, Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Nature",
+        description: "Kawah Candradimuka dikenal dalam cerita pewayangan sebagai tempat pembentukan Gatotkaca. Kawah ini memiliki sumber air panas alami dengan uap belerang. Lokasinya relatif tenang dan cocok untuk wisata santai.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "08:00 - 17:00 WIB", hargaTiket: "Rp 5.000" },
+        facilities: ["Parkir","Jalur Jalan","Warung","Toilet"]
+    },
+    {
+        id: "d6e5f4a3-b2c1-4d0e-9f8a-7b6c5d4e3f2a",
+        title: "Curug Pitu",
+        country: "Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Nature",
+        description: "Curug Pitu merupakan air terjun bertingkat yang tersembunyi di kawasan hutan. Suasana alami dan suara air memberikan pengalaman relaksasi. Trek menuju lokasi cukup menantang namun sepadan dengan keindahannya.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "08:00 - 16:00 WIB", hargaTiket: "Rp 5.000" },
+        facilities: ["Parkir","Toilet","Ruang Ganti","Warung"]
+    },
+    {
+        id: "e5f4a3b2-c1d0-4e9f-8a7b-6c5d4e3f2a1b",
+        title: "D'Qiano Hot Spring Waterpark",
+        country: "Dieng, Banjarnegara, Indonesia",
+        image: "/images/thumbnail.jpeg",
+        tag: "Recreation",
+        description: "D'Qiano merupakan waterpark air panas yang memanfaatkan sumber alami Dieng. Cocok untuk relaksasi di suhu dingin, dengan berbagai wahana air dan fasilitas modern.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "08:00 - 17:00 WIB", hargaTiket: "Rp 20.000" },
+        facilities: ["Kolam Air Panas","Waterboom","Kamar Bilas","Loker","Penginapan"]
+    },
+    // --- OHNAN (10 DATA) ---
+    {
+        id: "f4a3b2c1-d0e9-4f8a-7b6c-5d4e3f2a1b0c",
+        title: "Koboku-no-mori Herb Garden",
+        country: "Ohnan, Shimane, Jepang",
+        image: "/images/thumbnail.jpeg",
+        tag: "Nature",
+        description: "Taman herbal luas dengan ratusan jenis tanaman yang memberikan pengalaman relaksasi alami. Cocok untuk berjalan santai sambil menikmati aroma tanaman.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Rabu - Senin", jam: "10:00 - 16:00", hargaTiket: "Gratis" },
+        facilities: ["Restoran","Taman","Bungalow","Informasi","Parkir"]
+    },
+    {
+        id: "a3b2c1d0-e9f8-4a7b-6c5d-4e3f2a1b0c9d",
+        title: "Uzui Station Park",
+        country: "Ohnan, Shimane, Jepang",
+        image: "/images/thumbnail.jpeg",
+        tag: "Historical",
+        description: "Bekas stasiun unik yang kini menjadi taman wisata dengan pemandangan lembah dari ketinggian.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "24 Jam", jam: "24 Jam", hargaTiket: "Gratis" },
+        facilities: ["Tangga","Spot Foto","Parkir","Toilet"]
+    },
+    {
+        id: "b2c1d0e9-f8a7-4b6c-5d4e-3f2a1b0c9d8e",
+        title: "Dangyokei Ravine",
+        country: "Ohnan, Shimane, Jepang",
+        image: "/images/thumbnail.jpeg",
+        tag: "Nature",
+        description: "Ngarai alami dengan formasi batu unik yang cocok untuk trekking dan menikmati perubahan musim.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "24 Jam", jam: "24 Jam", hargaTiket: "Gratis" },
+        facilities: ["Trekking","Spot Foto","Parkir","Toilet"]
+    },
+    {
+        id: "c1d0e9f8-a7b6-4c5d-4e3f-2a1b0c9d8e7f",
+        title: "Mizuho Highland",
+        country: "Ohnan, Shimane, Jepang",
+        image: "/images/thumbnail.jpeg",
+        tag: "Adventure",
+        description: "Resor outdoor yang berfungsi sebagai ski resort saat musim dingin dan area camping saat musim panas.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Jumat - Selasa", jam: "09:00 - 17:00", hargaTiket: "Mulai ¥8.000" },
+        facilities: ["Ski","Camping","Sauna","Restoran","Sewa"]
+    },
+    {
+        id: "d0e9f8a7-b6c5-4d4e-3f2a-1b0c9d8e7f6a",
+        title: "Kiri-no-yu Onsen",
+        country: "Ohnan, Shimane, Jepang",
+        image: "/images/thumbnail.jpeg",
+        tag: "Relaxation",
+        description: "Onsen tradisional dengan kolam indoor dan outdoor yang memanfaatkan air panas alami.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Rabu - Senin", jam: "10:00 - 21:00", hargaTiket: "¥600" },
+        facilities: ["Kolam","Ruang Santai","Kafetaria","Loker"]
+    },
+    {
+        id: "e9f8a7b6-c5d4-4e3f-2a1b-0c9d8e7f6a5b",
+        title: "Ohnan Ryokou-mura",
+        country: "Ohnan, Shimane, Jepang",
+        image: "/images/thumbnail.jpeg",
+        tag: "Recreation",
+        description: "Area wisata keluarga dengan fasilitas camping, panjat tebing, dan wahana air.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Senin - Minggu", jam: "09:00 - 17:00", hargaTiket: "Variatif" },
+        facilities: ["Waterpark","Camping","Panjat Tebing","Toilet","Parkir"]
+    },
+    {
+        id: "f8a7b6c5-d4e3-4f2a-1b0c-9d8e7f6a5b4c",
+        title: "Hanamomo-no-Sato",
+        country: "Ohnan, Shimane, Jepang",
+        image: "/images/thumbnail.jpeg",
+        tag: "Nature",
+        description: "Area bunga persik yang mekar di musim semi dengan panorama sawah bertingkat.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "Musiman", jam: "08:00 - 17:00", hargaTiket: "Gratis" },
+        facilities: ["Spot Foto","Jalur Jalan","Parkir"]
+    },
+    {
+        id: "a7b6c5d4-e3f2-4a1b-0c9d-8e7f6a5b4c3d",
+        title: "Kuki Silver Mine Ruins",
+        country: "Ohnan, Shimane, Jepang",
+        image: "/images/thumbnail.jpeg",
+        tag: "Historical",
+        description: "Situs tambang perak kuno yang memberikan wawasan sejarah pertambangan Jepang.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "24 Jam", jam: "24 Jam", hargaTiket: "Gratis" },
+        facilities: ["Informasi","Jalur","Spot Foto"]
+    },
+    {
+        id: "b6c5d4e3-f2a1-4b0c-9d8e-7f6a5b4c3d2e",
+        title: "Banryukyo Gorge",
+        country: "Ohnan, Shimane, Jepang",
+        image: "/images/thumbnail.jpeg",
+        tag: "Nature",
+        description: "Ngarai alami dengan suasana hening dan aliran sungai jernih, cocok untuk relaksasi.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "24 Jam", jam: "24 Jam", hargaTiket: "Gratis" },
+        facilities: ["Jalur Alam","Tempat Duduk","Toilet"]
+    },
+    {
+        id: "c5d4e3f2-a1b0-4c9d-8e7f-6a5b4c3d2e1f",
+        title: "Suwa Shrine",
+        country: "Ohnan, Shimane, Jepang",
+        image: "/images/thumbnail.jpeg",
+        tag: "Cultural",
+        description: "Kuil bersejarah dengan jalan masuk yang diapit pohon cedar besar, menciptakan suasana sakral.",
+        mapUrl: "https://www.google.com/maps?q=Kawah+Sikidang,+Banjarnegara&output=embed",
+        info: { operasional: "24 Jam", jam: "24 Jam", hargaTiket: "Gratis" },
+        facilities: ["Kuil","Jalur Jalan","Parkir"]
+    }
+];
