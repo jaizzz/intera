@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, usePage } from "@inertiajs/react";
 import Button from "@/Components/ui/button/Button";
 import { HiMenuAlt3, HiX, HiChevronDown } from "react-icons/hi";
+import { useTranslation } from "react-i18next";
 
 import LogoColor from "../../../assets/svg/logo-color.svg";
 
@@ -13,12 +14,12 @@ const LANGUAGES = [
 
 const Navbar = () => {
     const { url } = usePage();
+    const { t, i18n } = useTranslation();
     const [openMenu, setOpenMenu] = useState(false);
     const [openLang, setOpenLang] = useState(false);
-    const [language, setLanguage] = useState("en");
     const [activeSection, setActiveSection] = useState("");
 
-    const selectedLang = LANGUAGES.find(l => l.code === language);
+    const selectedLang = LANGUAGES.find(l => l.code === i18n.language) || LANGUAGES[1]; // Default EN
 
     const isHomeActive = url === "/" || url === "/#";
     const isExploreActive = url.startsWith("/explore") || url.startsWith("/destination");
@@ -62,6 +63,11 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [url]);
 
+    const changeLanguage = (code: string) => {
+        i18n.changeLanguage(code);
+        setOpenLang(false);
+    };
+
     return (
         <nav className="fixed top-4 lg:top-6 left-0 w-full z-50">
             <div className="mx-auto px-4 lg:px-12">
@@ -75,11 +81,11 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-700">
-                        <Link href="/" className={`hover:text-primary transition-colors ${isHomeActive && !activeSection ? "text-primary font-bold" : ""}`}>Home</Link>
-                        <Link href="/explore" className={`hover:text-primary transition-colors ${isExploreActive ? "text-primary font-bold" : ""}`}>Explore</Link>
-                        <Link href="/travel" className={`hover:text-primary transition-colors ${isTravelActive ? "text-primary font-bold" : ""}`}>Travel</Link>
-                        <Link href="/#faq" className={`hover:text-primary transition-colors ${activeSection === "faq" ? "text-primary font-bold" : ""}`}>FAQ</Link>
-                        <Link href="/#testimonial" className={`hover:text-primary transition-colors ${activeSection === "testimonial" ? "text-primary font-bold" : ""}`}>Testimonial</Link>
+                        <Link href="/" className={`hover:text-primary transition-colors ${isHomeActive && !activeSection ? "text-primary font-bold" : ""}`}>{t('navbar.home')}</Link>
+                        <Link href="/explore" className={`hover:text-primary transition-colors ${isExploreActive ? "text-primary font-bold" : ""}`}>{t('navbar.explore')}</Link>
+                        <Link href="/travel" className={`hover:text-primary transition-colors ${isTravelActive ? "text-primary font-bold" : ""}`}>{t('navbar.travel')}</Link>
+                        <Link href="/#faq" className={`hover:text-primary transition-colors ${activeSection === "faq" ? "text-primary font-bold" : ""}`}>{t('navbar.faq')}</Link>
+                        <Link href="/#testimonial" className={`hover:text-primary transition-colors ${activeSection === "testimonial" ? "text-primary font-bold" : ""}`}>{t('navbar.testimonial')}</Link>
                     </div>
 
                     {/* Desktop Right */}
@@ -97,11 +103,8 @@ const Navbar = () => {
                                 {LANGUAGES.map(lang => (
                                     <button
                                         key={lang.code}
-                                        onClick={() => {
-                                            setLanguage(lang.code);
-                                            setOpenLang(false);
-                                        }}
-                                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 ${language === lang.code
+                                        onClick={() => changeLanguage(lang.code)}
+                                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 ${i18n.language === lang.code
                                                 ? "font-semibold text-primary"
                                                 : ""
                                             }`}
@@ -114,7 +117,7 @@ const Navbar = () => {
 
                         <Link href="/get-started">
                             <Button>
-                                Get Started
+                                {t('navbar.get_started')}
                             </Button>
                         </Link>
                     </div>
@@ -134,7 +137,7 @@ const Navbar = () => {
 
                         {/* Mobile Language Dropdown */}
                         <div className="px-5 py-4 border-b relative">
-                            <p className="text-xs text-gray-400 mb-2">Language</p>
+                            <p className="text-xs text-gray-400 mb-2">{t('navbar.language')}</p>
 
                             <button
                                 onClick={() => setOpenLang(!openLang)}
@@ -152,11 +155,8 @@ const Navbar = () => {
                                     {LANGUAGES.map(lang => (
                                         <button
                                             key={lang.code}
-                                            onClick={() => {
-                                                setLanguage(lang.code);
-                                                setOpenLang(false);
-                                            }}
-                                            className={`w-full text-left px-4 py-3 text-sm hover:bg-gray-100 ${language === lang.code
+                                            onClick={() => changeLanguage(lang.code)}
+                                            className={`w-full text-left px-4 py-3 text-sm hover:bg-gray-100 ${i18n.language === lang.code
                                                     ? "font-semibold text-primary"
                                                     : ""
                                                 }`}
@@ -171,11 +171,11 @@ const Navbar = () => {
                         {/* Menu Links */}
                         <div className="flex flex-col px-5 py-4 space-y-3 text-sm">
                             {[
-                                { href: "/", label: "Home", active: isHomeActive && !activeSection },
-                                { href: "/explore", label: "Explore", active: isExploreActive },
-                                { href: "/travel", label: "Travel", active: isTravelActive },
-                                { href: "/#faq", label: "FAQ", active: activeSection === "faq" },
-                                { href: "/#testimonial", label: "Testimonial", active: activeSection === "testimonial" },
+                                { href: "/", label: t('navbar.home'), active: isHomeActive && !activeSection },
+                                { href: "/explore", label: t('navbar.explore'), active: isExploreActive },
+                                { href: "/travel", label: t('navbar.travel'), active: isTravelActive },
+                                { href: "/#faq", label: t('navbar.faq'), active: activeSection === "faq" },
+                                { href: "/#testimonial", label: t('navbar.testimonial'), active: activeSection === "testimonial" },
                             ].map(item => (
                                 <Link
                                     key={item.href}
@@ -193,7 +193,7 @@ const Navbar = () => {
 
                             <Link href="/get-started" onClick={() => setOpenMenu(false)}>
                                 <Button className="w-full mt-2">
-                                    Get Started
+                                    {t('navbar.get_started')}
                                 </Button>
                             </Link>
                         </div>

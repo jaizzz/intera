@@ -1,5 +1,6 @@
 import Button from "@/Components/ui/button/Button";
 import { FaWhatsapp } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 import CTA1 from "../../../assets/img/cta/cta-1.jpg";
 import CTA2 from "../../../assets/img/cta/cta-2.jpg";
@@ -7,9 +8,9 @@ import CTA3 from "../../../assets/img/cta/cta-3.jpg";
 import CTA4 from "../../../assets/img/cta/cta-4.jpg";
 
 export default function CTASection() {
+    const { t } = useTranslation();
     const whatsappNumber = "6281234567890";
-    const message =
-        "Hello, I would like to ask about your destination travel packages.";
+    const message = t('cta.whatsapp_message');
 
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
         message
@@ -70,18 +71,15 @@ export default function CTASection() {
                 {/* Content */}
                 <div>
                     <p className="text-sm text-gray-400 mb-2">
-                        Your next adventure starts here
+                        {t('cta.tagline')}
                     </p>
 
                     <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                        <span className="text-primary">Plan Your Trip</span> <br />
-                        With Our Destination Packages
+                        {t('cta.title')}
                     </h2>
 
                     <p className="mt-4 text-sm text-gray-600 leading-relaxed max-w-lg">
-                        Explore curated destination packages tailored to your travel
-                        style. From nature escapes to cultural journeys, our team is
-                        ready to help you plan a memorable and stress-free trip.
+                        {t('cta.subtitle')}
                     </p>
 
                     {/* CTA */}
@@ -93,7 +91,7 @@ export default function CTASection() {
                         >
                             <Button className="flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full">
                                 <FaWhatsapp className="text-lg" />
-                                Chat via WhatsApp
+                                {t('cta.button')}
                             </Button>
                         </a>
                     </div>

@@ -1,4 +1,5 @@
 import { Head, Link } from "@inertiajs/react";
+import { useTranslation } from "react-i18next";
 import { DESTINATIONS } from "@/data/destination";
 
 import AppLayout from "@/Layouts/AppLayout";
@@ -19,6 +20,7 @@ interface Props {
 }
 
 export default function Show({ id }: Props) {
+    const { t } = useTranslation();
     const destination = DESTINATIONS.find(
         (d) => d.id.toString() === id.toString(),
     );
@@ -29,13 +31,13 @@ export default function Show({ id }: Props) {
                 <div className="min-h-screen flex items-center justify-center">
                     <div className="text-center">
                         <h1 className="text-4xl font-bold text-gray-900">
-                            Destination Not Found
+                            {t('show.not_found')}
                         </h1>
                         <Link
                             href="/"
                             className="mt-4 text-primary hover:underline inline-block"
                         >
-                            Back to Home
+                            {t('show.back_to_home')}
                         </Link>
                     </div>
                 </div>
@@ -43,9 +45,14 @@ export default function Show({ id }: Props) {
         );
     }
 
+    const translatedTitle = t(`destinations.${destination.id}.title`, { defaultValue: destination.title });
+    const translatedTag = t(`destinations.${destination.id}.tag`, { defaultValue: destination.tag });
+    const translatedCountry = t(`destinations.${destination.id}.country`, { defaultValue: destination.country });
+    const translatedDescription = t(`destinations.${destination.id}.description`, { defaultValue: destination.description });
+
     return (
         <AppLayout>
-            <Head title={`${destination.title} - Intera`} />
+            <Head title={`${translatedTitle} - Intera`} />
 
             <div className="bg-gray-50 min-h-screen pt-24 md:pt-28 lg:pt-32 pb-12">
                 <div className="mx-auto px-4 lg:px-12">
@@ -56,7 +63,7 @@ export default function Show({ id }: Props) {
                             className="inline-flex items-center text-gray-600 hover:text-primary transition-colors font-semibold group"
                         >
                             <FaChevronLeft className="mr-2 text-sm transition-transform group-hover:-translate-x-1" />
-                            Kembali ke Jelajah
+                            {t('show.back_to_explore')}
                         </Link>
                     </div>
 
@@ -65,20 +72,20 @@ export default function Show({ id }: Props) {
                         <div className="relative h-[400px] md:h-[600px] w-full">
                             <img
                                 src={destination.image}
-                                alt={destination.title}
+                                alt={translatedTitle}
                                 className="w-full h-full object-cover"
                             />
                             <div className="absolute inset-0 bg-linear-to-t from-black/90 via-transparent to-transparent" />
                             <div className="absolute bottom-8 left-4 right-4 lg:left-8 lg:right-8 text-white">
                                 <div className="inline-block bg-white/40 px-4 py-1 rounded-full text-sm font-semibold mb-4">
-                                    {destination.tag}
+                                    {translatedTag}
                                 </div>
                                 <h1 className="text-4xl md:text-5xl font-bold mb-2">
-                                    {destination.title}
+                                    {translatedTitle}
                                 </h1>
                                 <div className="flex items-center text-white/90">
                                     <FaMapMarkerAlt className="mr-2" />
-                                    {destination.country}
+                                    {translatedCountry}
                                 </div>
                             </div>
                         </div>
@@ -89,19 +96,22 @@ export default function Show({ id }: Props) {
                                 <div className="lg:col-span-2">
                                     <section className="mb-12">
                                         <h2 className="text-xl font-bold text-gray-900 mb-6">
-                                            Tentang Destinasi
+                                            {t('show.about')}
                                         </h2>
                                         <div className="text-gray-600 leading-relaxed">
-                                            <p>{destination.description}</p>
+                                            <p>{translatedDescription}</p>
                                         </div>
                                     </section>
 
                                     <section>
                                         <h2 className="text-xl font-bold text-gray-900 mb-6">
-                                            Fasilitas yang Tersedia
+                                            {t('show.facilities')}
                                         </h2>
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                            {destination.facilities.map(
+                                            {(t(`destinations.${destination.id}.facilities`, { 
+                                                returnObjects: true, 
+                                                defaultValue: destination.facilities 
+                                            }) as string[]).map(
                                                 (fac, idx) => (
                                                     <div
                                                         key={idx}
@@ -125,7 +135,7 @@ export default function Show({ id }: Props) {
                                     {/* Info Wisata Card */}
                                     <div className="lg:bg-white lg:rounded-3xl lg:p-8 lg:border lg:border-gray-100 lg:shadow-xl lg:shadow-gray-200/50">
                                         <h3 className="text-xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-100">
-                                            Informasi Wisata
+                                            {t('show.info')}
                                         </h3>
                                         <div className="space-y-6">
                                             <div className="flex items-start gap-4">
@@ -134,10 +144,12 @@ export default function Show({ id }: Props) {
                                                 </div>
                                                 <div>
                                                     <p className="font-bold text-gray-900 text-sm">
-                                                        Operasional
+                                                        {t('show.operational')}
                                                     </p>
                                                     <p className="text-gray-600 text-sm mt-1">
-                                                        {destination.info.operasional}
+                                                        {t(`destinations.${destination.id}.info.operasional`, { 
+                                                            defaultValue: destination.info.operasional 
+                                                        })}
                                                     </p>
                                                 </div>
                                             </div>
@@ -147,10 +159,12 @@ export default function Show({ id }: Props) {
                                                 </div>
                                                 <div>
                                                     <p className="font-bold text-gray-900 text-sm">
-                                                        Jam Buka
+                                                        {t('show.opening_hours')}
                                                     </p>
                                                     <p className="text-gray-600 text-sm mt-1">
-                                                        {destination.info.jam}
+                                                        {t(`destinations.${destination.id}.info.jam`, { 
+                                                            defaultValue: destination.info.jam 
+                                                        })}
                                                     </p>
                                                 </div>
                                             </div>
@@ -160,7 +174,7 @@ export default function Show({ id }: Props) {
                                             size="md"
                                             className="w-full mt-6"
                                         >
-                                            Pesan Sekarang
+                                            {t('show.book_now')}
                                         </Button>
                                     </div>
                                 </div>
@@ -169,12 +183,12 @@ export default function Show({ id }: Props) {
                             {/* Map Card */}
                             <div className="mt-12">
                                 <h3 className="text-xl font-bold text-gray-900 mb-6">
-                                    Lokasi
+                                    {t('show.location')}
                                 </h3>
 
                                 <div className="w-full h-[400px] rounded-3xl overflow-hidden border border-gray-100 shadow-sm">
                                     <iframe
-                                        title={`Peta lokasi ${destination.title}`}
+                                        title={`Peta lokasi ${translatedTitle}`}
                                         src={destination.mapUrl}
                                         className="w-full h-full"
                                         style={{ border: 0 }}

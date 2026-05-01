@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { Head } from "@inertiajs/react";
+import { useTranslation } from "react-i18next";
 
 import { TRAVELS } from "@/data/travel";
 import AppLayout from "@/Layouts/AppLayout";
@@ -12,6 +13,7 @@ import { FaMapMarkerAlt, FaTimes, FaPhone } from "react-icons/fa";
 import EmptyState from "@/Components/ui/EmptyState";
 
 export default function Index() {
+    const { t } = useTranslation();
     const [search, setSearch] = useState("");
     const [selectedCountries, setSelectedCountries] = useState<string[]>([]);
 
@@ -56,7 +58,7 @@ export default function Index() {
 
     return (
         <AppLayout>
-            <Head title="Explore Travel - Intera Travel" />
+            <Head title={`${t('travel_page.title')} - Intera Travel`} />
 
             <div className="bg-gray-50 min-h-screen pt-32 lg:pt-36 pb-20">
                 <div className="w-full mx-auto px-4 lg:px-12">
@@ -66,16 +68,16 @@ export default function Index() {
                         <div className="flex items-center gap-3 mb-3">
                             <div className="h-6 w-1 bg-primary rounded-full"></div>
                             <span className="text-primary font-semibold uppercase tracking-widest text-xs">
-                                Travel Agency
+                                {t('travel_page.agency')}
                             </span>
                         </div>
 
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-                            Find Travel Services
+                            {t('travel_page.title')}
                         </h1>
 
                         <p className="text-gray-500 mt-3">
-                            Discover trusted travel agencies for your next journey.
+                            {t('travel_page.subtitle')}
                         </p>
                     </div>
 
@@ -87,11 +89,11 @@ export default function Index() {
                                 search={{
                                     value: search,
                                     onChange: setSearch,
-                                    placeholder: "Search travel...",
+                                    placeholder: t('travel_page.search_placeholder'),
                                 }}
                                 filters={[
                                     {
-                                        label: "Country",
+                                        label: t('hero.country_label'),
                                         value: selectedCountries,
                                         options: countries,
                                         onChange: setSelectedCountries,
@@ -104,7 +106,7 @@ export default function Index() {
                             {totalActiveFilters > 0 && (
                                 <div className="flex flex-wrap items-center gap-2">
                                     <span className="text-sm text-gray-500">
-                                        Active filters:
+                                        {t('explore.active_filters')}
                                     </span>
 
                                     {search && (
@@ -141,7 +143,7 @@ export default function Index() {
                                         }}
                                         className="ml-2 text-xs font-semibold text-gray-500 hover:text-primary"
                                     >
-                                        Reset
+                                        {t('explore.reset')}
                                     </button>
                                 </div>
                             )}
@@ -151,11 +153,11 @@ export default function Index() {
                     {/* RESULT */}
                     <div className="flex items-center justify-between mt-6 mb-8">
                         <p className="text-sm text-gray-500">
-                            Showing{" "}
+                            {t('travel_page.showing')}{" "}
                             <span className="font-semibold text-gray-900">
                                 {filteredTravels.length}
                             </span>{" "}
-                            travel services
+                            {t('travel_page.services')}
                         </p>
                     </div>
 
@@ -195,7 +197,7 @@ export default function Index() {
                                             <a href={`tel:${item.contact}`}>
                                                 <Button className="w-full mt-4 flex items-center justify-center gap-2">
                                                     <FaPhone />
-                                                    Contact
+                                                    {t('travel_page.contact')}
                                                 </Button>
                                             </a>
                                         </div>

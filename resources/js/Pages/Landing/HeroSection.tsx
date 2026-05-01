@@ -3,6 +3,7 @@ import { router } from "@inertiajs/react";
 import { HiChevronDown, HiLocationMarker } from "react-icons/hi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -14,6 +15,7 @@ import Hero3 from '../../../assets/img/hero/hero-3.png';
 import { DESTINATIONS } from "@/data/destination";
 
 export default function HeroSection() {
+    const { t, i18n } = useTranslation();
     const [openCountry, setOpenCountry] = useState(false);
     const [openCategory, setOpenCategory] = useState(false);
 
@@ -39,11 +41,12 @@ export default function HeroSection() {
     const [displayText, setDisplayText] = useState("");
     const [sentenceIndex, setSentenceIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const sentences = [
-        "WHERE EVERY TRIP HAS A STORY",
-        "EXPLORE DESTINATIONS BEYOND LIMITS",
-        "CRAFTING MEMORIES THAT LAST FOREVER"
-    ];
+    
+    const sentences = useMemo(() => [
+        t('hero.sentence1', "WHERE EVERY TRIP HAS A STORY"),
+        t('hero.sentence2', "EXPLORE DESTINATIONS BEYOND LIMITS"),
+        t('hero.sentence3', "CRAFTING MEMORIES THAT LAST FOREVER")
+    ], [t]);
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -78,7 +81,14 @@ export default function HeroSection() {
         }, typingSpeed);
 
         return () => clearTimeout(timeout);
-    }, [displayText, isDeleting, sentenceIndex]);
+    }, [displayText, isDeleting, sentenceIndex, sentences]);
+
+    // Reset typing on language change
+    useEffect(() => {
+        setDisplayText("");
+        setSentenceIndex(0);
+        setIsDeleting(false);
+    }, [i18n.language]);
 
     const heroImages = [
         Hero1,
@@ -133,7 +143,7 @@ export default function HeroSection() {
                 </h1>
 
                 <p className="mt-4 text-sm sm:text-base text-white/90 max-w-2xl mx-auto">
-                    Explore destinations shaped by rich culture, breathtaking landscapes, and thoughtfully crafted experiences designed to leave a lasting impression long after your journey ends.
+                    {t('hero.subtitle')}
                 </p>
 
                 {/* Search Bar */}
@@ -165,7 +175,7 @@ export default function HeroSection() {
                         >
                             <div className="flex items-center gap-1 sm:gap-2">
                                 <HiLocationMarker className="text-gray-400 text-sm" />
-                                <span className="truncate">{country}</span>
+                                <span className="truncate">{country === "Country" ? t('hero.country_label', "Country") : country}</span>
                             </div>
                             <HiChevronDown className="text-sm" />
                         </button>
@@ -205,7 +215,7 @@ export default function HeroSection() {
                                 text-xs sm:text-sm
                             "
                         >
-                            <span className="truncate">{category}</span>
+                            <span className="truncate">{category === "Category" ? t('hero.category_label', "Category") : category}</span>
                             <HiChevronDown className="text-sm" />
                         </button>
 
@@ -240,7 +250,7 @@ export default function HeroSection() {
                             ml-1
                         "
                     >
-                        Search
+                        {t('hero.button')}
                     </button>
                 </div>
             </div>

@@ -1,31 +1,15 @@
 import { FaStar } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function TestimonialSection() {
-    const testimonials = [
-        {
-            name: "Angel Barbara",
-            role: "Travel Enthusiast",
-            image: "https://randomuser.me/api/portraits/women/44.jpg",
-            rating: 5,
-            message:
-                "The trip was perfectly organized from start to finish. Every destination felt special, and the experience exceeded my expectations.",
-        },
-        {
-            name: "John Doe",
-            role: "Solo Traveler",
-            image: "https://randomuser.me/api/portraits/men/32.jpg",
-            rating: 5,
-            message:
-                "An unforgettable journey! The balance between adventure and relaxation was spot on. I learned so much without ever feeling rushed.",
-        },
-        {
-            name: "Sophia Tan",
-            role: "Family Traveler",
-            image: "https://randomuser.me/api/portraits/women/65.jpg",
-            rating: 4,
-            message:
-                "Great service and very friendly team. The destinations were well curated and suitable for the whole family.",
-        },
+    const { t } = useTranslation();
+    const testimonialData = t('testimonial.items', { returnObjects: true }) as { name: string, role: string, message: string }[];
+
+    // Images mapping (since they are external URLs, we can keep them or map them)
+    const images = [
+        "https://randomuser.me/api/portraits/women/44.jpg",
+        "https://randomuser.me/api/portraits/men/32.jpg",
+        "https://randomuser.me/api/portraits/women/65.jpg",
     ];
 
     return (
@@ -35,24 +19,24 @@ export default function TestimonialSection() {
                 {/* Header */}
                 <div className="text-center max-w-2xl mx-auto">
                     <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                        Stories From Our <span className="text-primary">Travelers</span>
+                        {t('testimonial.title_prefix')} <span className="text-primary">{t('testimonial.title_suffix')}</span>
                     </h2>
                     <p className="mt-3 text-sm text-gray-500">
-                        Real stories from travelers who’ve explored unforgettable destinations with our curated travel packages.
+                        {t('testimonial.subtitle')}
                     </p>
                 </div>
 
                 {/* Testimonials */}
                 <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    {testimonials.map((item, index) => (
+                    {Array.isArray(testimonialData) && testimonialData.map((item, index) => (
                         <div
                             key={index}
                             className="bg-gray-50 rounded-3xl p-6 shadow-sm hover:shadow-md transition"
                         >
                             {/* Rating */}
                             <div className="flex items-center gap-1 text-orange-400">
-                                {[...Array(item.rating)].map((_, i) => (
+                                {[...Array(5)].map((_, i) => (
                                     <FaStar key={i} />
                                 ))}
                             </div>
@@ -65,7 +49,7 @@ export default function TestimonialSection() {
                             {/* User */}
                             <div className="mt-6 flex items-center gap-4">
                                 <img
-                                    src={item.image}
+                                    src={images[index]}
                                     alt={item.name}
                                     className="w-12 h-12 rounded-full object-cover"
                                 />

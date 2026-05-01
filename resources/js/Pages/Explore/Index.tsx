@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { Head, Link } from "@inertiajs/react";
+import { useTranslation } from "react-i18next";
 
 import { DESTINATIONS } from "@/data/destination";
 import AppLayout from "@/Layouts/AppLayout";
@@ -12,6 +13,7 @@ import { FaMapMarkerAlt, FaTimes } from "react-icons/fa";
 import EmptyState from "@/Components/ui/EmptyState";
 
 export default function Index() {
+    const { t } = useTranslation();
     const [search, setSearch] = useState("");
     const [selectedCountries, setSelectedCountries] = useState<string[]>([]);
     const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -67,7 +69,7 @@ export default function Index() {
 
     return (
         <AppLayout>
-            <Head title="Explore Destinations - Intera Travel" />
+            <Head title={`${t('explore.title')} - Intera Travel`} />
 
             <div className="bg-gray-50 min-h-screen pt-32 lg:pt-36 pb-20">
                 <div className="w-full mx-auto px-4 lg:px-12">
@@ -77,16 +79,16 @@ export default function Index() {
                         <div className="flex items-center gap-3 mb-3">
                             <div className="h-6 w-1 bg-primary rounded-full"></div>
                             <span className="text-primary font-semibold uppercase tracking-widest text-xs">
-                                Discover
+                                {t('explore.discover')}
                             </span>
                         </div>
 
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-                            Explore Destinations
+                            {t('explore.title')}
                         </h1>
 
                         <p className="text-gray-500 mt-3">
-                            Temukan destinasi terbaik dari seluruh dunia yang sudah kami kurasi untuk pengalaman terbaik.
+                            {t('explore.subtitle')}
                         </p>
                     </div>
 
@@ -98,17 +100,17 @@ export default function Index() {
                                 search={{
                                     value: search,
                                     onChange: setSearch,
-                                    placeholder: "Cari destinasi...",
+                                    placeholder: t('explore.search_placeholder'),
                                 }}
                                 filters={[
                                     {
-                                        label: "Negara",
+                                        label: t('hero.country_label'),
                                         value: selectedCountries,
                                         options: countries,
                                         onChange: setSelectedCountries,
                                     },
                                     {
-                                        label: "Kategori",
+                                        label: t('hero.category_label'),
                                         value: selectedTags,
                                         options: tags,
                                         onChange: setSelectedTags,
@@ -121,7 +123,7 @@ export default function Index() {
                             {totalActiveFilters > 0 && (
                                 <div className="flex flex-wrap items-center gap-2">
                                     <span className="text-sm text-gray-500">
-                                        Filter aktif:
+                                        {t('explore.active_filters')}
                                     </span>
 
                                     {search && (
@@ -177,7 +179,7 @@ export default function Index() {
                                         }}
                                         className="ml-2 text-xs font-semibold text-gray-500 hover:text-primary"
                                     >
-                                        Reset
+                                        {t('explore.reset')}
                                     </button>
                                 </div>
                             )}
@@ -187,11 +189,11 @@ export default function Index() {
                     {/* Result Info */}
                     <div className="flex items-center justify-between mt-6 mb-8">
                         <p className="text-sm text-gray-500">
-                            Menampilkan{" "}
+                            {t('explore.showing')}{" "}
                             <span className="font-semibold text-gray-900">
                                 {filteredDestinations.length}
                             </span>{" "}
-                            destinasi
+                            {t('explore.destinations')}
                         </p>
                     </div>
 
@@ -211,26 +213,26 @@ export default function Index() {
                                         />
 
                                         <span className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-primary text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
-                                            {item.tag}
+                                            {t(`destinations.${item.id}.tag`, { defaultValue: item.tag })}
                                         </span>
                                     </div>
 
                                     <div className="p-5 flex flex-col flex-1">
                                         <h3 className="text-lg font-semibold text-gray-900 line-clamp-1">
-                                            {item.title}
+                                            {t(`destinations.${item.id}.title`, { defaultValue: item.title })}
                                         </h3>
 
                                         <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
                                             <FaMapMarkerAlt className="text-primary shrink-0" />
                                             <span className="line-clamp-1">
-                                                {item.country}
+                                                {t(`destinations.${item.id}.country`, { defaultValue: item.country })}
                                             </span>
                                         </div>
 
                                         <div className="mt-auto">
                                             <Link href={`/destination/${item.id}`}>
                                                 <Button className="w-full mt-4">
-                                                    View Details
+                                                    {t('explore.view_details')}
                                                 </Button>
                                             </Link>
                                         </div>

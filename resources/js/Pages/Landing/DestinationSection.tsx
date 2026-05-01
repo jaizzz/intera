@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import Button from "@/Components/ui/button/Button";
+import { useTranslation } from "react-i18next";
 
 import { DESTINATIONS } from "@/data/destination";
 
@@ -13,12 +14,13 @@ import "swiper/css/pagination";
 
 
 export default function DestinationSection() {
+    const { t } = useTranslation();
     const swiperRef = useRef<SwiperType | null>(null);
     const [activeIndex, setActiveIndex] = useState(0);
     const [isBeginning, setIsBeginning] = useState(true);
     const [isEnd, setIsEnd] = useState(false);
 
-    // 🔥 RANDOMIZE DESTINATIONS (3 INDO, 3 JAPAN)
+    // ... (rest of randomized logic)
     const randomDestinations = useMemo(() => {
         const indonesia = DESTINATIONS.filter(d =>
             d.country.toLowerCase().includes("indonesia")
@@ -47,11 +49,10 @@ export default function DestinationSection() {
             <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 mb-10">
                 <div>
                     <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                        <span className="text-primary">Explore</span> Popular Destinations
+                        <span className="text-primary">{t('destination.title_prefix')}</span> {t('destination.title_suffix')}
                     </h2>
                     <p className="mt-2 text-sm text-gray-500 max-w-xl">
-                        Discover breathtaking destinations from Japan and Indonesia,
-                        curated for unforgettable travel experiences.
+                        {t('destination.subtitle')}
                     </p>
                 </div>
 
@@ -84,7 +85,7 @@ export default function DestinationSection() {
 
                     <Link href="/explore">
                         <button className="text-sm px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 transition">
-                            Explore All
+                            {t('destination.explore_all')}
                         </button>
                     </Link>
                 </div>
@@ -126,23 +127,25 @@ export default function DestinationSection() {
                                 />
                                 {/* Tag Badge */}
                                 <span className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-primary text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
-                                    {item.tag}
+                                    {t(`destinations.${item.id}.tag`, { defaultValue: item.tag })}
                                 </span>
                             </div>
 
                             {/* Content */}
-                            <div className="p-5">
-                                <h3 className="text-lg font-semibold text-gray-900">
-                                    {item.title}
+                            <div className="p-5 flex flex-col flex-1">
+                                <h3 className="text-lg font-semibold text-gray-900 line-clamp-1">
+                                    {t(`destinations.${item.id}.title`, { defaultValue: item.title })}
                                 </h3>
 
                                 <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
                                     <FaMapMarkerAlt className="text-primary shrink-0" />
-                                    {item.country}
+                                    <span className="line-clamp-1">
+                                        {t(`destinations.${item.id}.country`, { defaultValue: item.country })}
+                                    </span>
                                 </div>
                                 <Link href={`/destination/${item.id}`} className="w-full">
                                     <Button className="w-full mt-5">
-                                        View Details
+                                        {t('destination.view_details')}
                                     </Button>
                                 </Link>
                             </div>
