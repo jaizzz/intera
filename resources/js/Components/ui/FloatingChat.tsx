@@ -196,7 +196,7 @@ export default function FloatingChat({ isAuthenticated }: FloatingChatProps) {
                         initial={{ opacity: 0, scale: 0.9, y: 20, transformOrigin: "bottom right" }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                        className="fixed bottom-24 right-6 lg:right-12 z-50 w-85 xsm:w-96 h-[550px] max-h-[calc(100vh-140px)] bg-white/95 dark:bg-zinc-900/95 backdrop-blur-xl rounded-2xl shadow-theme-xl flex flex-col dark:border-zinc-800 overflow-hidden"
+                        className="fixed bottom-24 right-4 left-4 sm:left-auto sm:right-6 lg:right-12 z-50 sm:w-96 h-[550px] max-h-[calc(100vh-140px)] bg-white/95 dark:bg-zinc-900/95 backdrop-blur-xl rounded-2xl shadow-theme-xl flex flex-col dark:border-zinc-800 overflow-hidden"
                     >
                         {/* Header */}
                         <div className="relative px-5 py-4 bg-primary text-white flex items-center gap-3 shadow-lg">
