@@ -140,176 +140,350 @@
             "tag": "Alam",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Kawah Sikidang merupakan kawah vulkanik aktif yang paling mudah diakses di kawasan Dieng. Aktivitas geotermalnya terlihat jelas melalui semburan uap panas dan kolam lumpur mendidih yang berpindah-pindah. Fenomena ini menjadikannya objek edukatif sekaligus menarik secara visual. Pengunjung juga dapat mencoba merebus telur di kawah kecil sebagai pengalaman unik.",
-            "facilities": ["Area Parkir", "Toilet", "Warung Makan", "Spot Foto", "Toko Souvenir"],
-            "info": { "operasional": "Senin - Minggu", "jam": "07:00 - 17:00 WIB", "hargaTiket": "Rp 20.000" }
+            "facilities": [
+                "Area Parkir",
+                "Toilet",
+                "Warung Makan",
+                "Spot Foto",
+                "Toko Souvenir"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "07:00 - 17:00 WIB",
+                "hargaTiket": "Rp 20.000"
+            }
         },
         "a7b8c9d0-e1f2-4a3b-8c7d-9e0f1a2b3c4d": {
             "title": "Kompleks Candi Arjuna",
             "tag": "Sejarah",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Kompleks Candi Arjuna merupakan peninggalan Hindu kuno yang diperkirakan berasal dari abad ke-7. Dikelilingi lanskap pegunungan dan kabut tipis khas Dieng, kawasan ini memberikan suasana sakral sekaligus menenangkan. Selain nilai sejarahnya, lokasi ini sering digunakan untuk kegiatan budaya dan fotografi.",
-            "facilities": ["Pusat Informasi", "Area Pejalan Kaki", "Toilet", "Spot Foto", "Taman"],
-            "info": { "operasional": "Senin - Minggu", "jam": "07:00 - 17:00 WIB", "hargaTiket": "Rp 20.000" }
+            "facilities": [
+                "Pusat Informasi",
+                "Area Pejalan Kaki",
+                "Toilet",
+                "Spot Foto",
+                "Taman"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "07:00 - 17:00 WIB",
+                "hargaTiket": "Rp 20.000"
+            }
         },
         "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e": {
             "title": "Telaga Warna",
             "tag": "Alam",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Telaga Warna dikenal karena fenomena perubahan warna airnya yang dipengaruhi kandungan mineral dan cahaya matahari. Kombinasi warna hijau, kuning, dan kebiruan menciptakan pemandangan unik. Area sekitar telaga juga menyediakan jalur trekking ringan dengan panorama hutan dan pegunungan.",
-            "facilities": ["Jalur Trekking", "Gazebo", "Toilet", "Warung Makan", "Spot Foto"],
-            "info": { "operasional": "Senin - Minggu", "jam": "06:30 - 16:30 WIB", "hargaTiket": "Rp 22.000 (Domestik) / Rp 169.000 (Mancanegara)" }
+            "facilities": [
+                "Jalur Trekking",
+                "Gazebo",
+                "Toilet",
+                "Warung Makan",
+                "Spot Foto"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "06:30 - 16:30 WIB",
+                "hargaTiket": "Rp 22.000 (Domestik) / Rp 169.000 (Mancanegara)"
+            }
         },
         "c4d5e6f7-a8b9-4c0d-1e2f-3a4b5c6d7e8f": {
             "title": "Bukit Sikunir",
             "tag": "Petualangan",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Bukit Sikunir menjadi lokasi populer untuk menikmati matahari terbit dengan panorama pegunungan. Pendakian relatif singkat namun memberikan hasil pemandangan spektakuler berupa lautan awan dan siluet gunung. Waktu terbaik berkunjung adalah dini hari.",
-            "facilities": ["Area Parkir", "Mushola", "Warung", "Toilet", "Jalur Pendakian"],
-            "info": { "operasional": "Senin - Minggu", "jam": "02:00 - 18:00 WIB", "hargaTiket": "Rp 15.000" }
+            "facilities": [
+                "Area Parkir",
+                "Mushola",
+                "Warung",
+                "Toilet",
+                "Jalur Pendakian"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "02:00 - 18:00 WIB",
+                "hargaTiket": "Rp 15.000"
+            }
         },
         "d9e0f1a2-b3c4-4d5e-6f7a-8b9c0d1e2f3a": {
             "title": "Arung Jeram Sungai Serayu",
             "tag": "Petualangan",
             "country": "Banjarnegara, Indonesia",
             "description": "Sungai Serayu menawarkan aktivitas arung jeram dengan berbagai tingkat kesulitan. Selain memacu adrenalin, pengunjung dapat menikmati pemandangan alam berupa tebing hijau dan area persawahan. Aktivitas ini dikelola secara profesional dengan standar keselamatan.",
-            "facilities": ["Peralatan", "Pemandu", "Basecamp", "Kamar Bilas", "Restoran"],
-            "info": { "operasional": "Senin - Minggu", "jam": "08:00 - 16:00 WIB", "hargaTiket": "Mulai Rp 200.000" }
+            "facilities": [
+                "Peralatan",
+                "Pemandu",
+                "Basecamp",
+                "Kamar Bilas",
+                "Restoran"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "08:00 - 16:00 WIB",
+                "hargaTiket": "Mulai Rp 200.000"
+            }
         },
         "e4f5a6b7-c8d9-4e0f-1a2b-3c4d5e6f7a8b": {
             "title": "TRMS Serulingmas",
             "tag": "Rekreasi",
             "country": "Banjarnegara, Indonesia",
             "description": "TRMS Serulingmas merupakan taman rekreasi sekaligus kebun binatang yang menyediakan edukasi satwa. Fasilitas tambahan seperti kolam renang dan taman bermain menjadikannya cocok untuk keluarga. Lingkungannya tertata dengan konsep wisata edukatif.",
-            "facilities": ["Kandang Satwa", "Kolam Renang", "Taman Bermain", "Toilet", "Parkir"],
-            "info": { "operasional": "Senin - Minggu", "jam": "07:00 - 16:00 WIB", "hargaTiket": "Rp 20.000" }
+            "facilities": [
+                "Kandang Satwa",
+                "Kolam Renang",
+                "Taman Bermain",
+                "Toilet",
+                "Parkir"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "07:00 - 16:00 WIB",
+                "hargaTiket": "Rp 20.000"
+            }
         },
         "f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c": {
             "title": "Surya Yudha Park",
             "tag": "Rekreasi",
             "country": "Banjarnegara, Indonesia",
             "description": "Surya Yudha Park adalah taman wisata terpadu dengan fasilitas waterpark, bioskop, dan hotel. Tempat ini dirancang sebagai destinasi hiburan keluarga dengan berbagai wahana menarik dan fasilitas lengkap.",
-            "facilities": ["Waterpark", "Bioskop", "Hotel", "Kafetaria", "Loker"],
-            "info": { "operasional": "Senin - Minggu", "jam": "08:00 - 17:00 WIB", "hargaTiket": "Rp 25.000 - 35.000" }
+            "facilities": [
+                "Waterpark",
+                "Bioskop",
+                "Hotel",
+                "Kafetaria",
+                "Loker"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "08:00 - 17:00 WIB",
+                "hargaTiket": "Rp 25.000 - 35.000"
+            }
         },
         "a9b8c7d6-e5f4-4a3b-2c1d-0e9f8a7b6c5d": {
-            "title": "Telaga Merdada",
+            "title": "Telaga Menjer",
             "tag": "Alam",
-            "country": "Dieng, Banjarnegara, Indonesia",
-            "description": "Telaga Merdada merupakan telaga terluas di Dieng yang terbentuk dari cekungan alami. Airnya berasal dari curah hujan, sehingga memberikan tampilan tenang dan luas. Dikelilingi area pertanian, tempat ini cocok untuk relaksasi.",
-            "facilities": ["Parkir", "Perahu", "Tempat Duduk", "Toilet", "Warung"],
-            "info": { "operasional": "Senin - Minggu", "jam": "07:00 - 16:00 WIB", "hargaTiket": "Rp 5.000" }
+            "country": "Garung, Wonosobo, Indonesia",
+            "description": "Telaga Menjer merupakan telaga alami yang berada di kaki Pegunungan Dieng, Wonosobo. Dikelilingi perbukitan hijau dan udara yang sejuk, telaga ini menawarkan pemandangan alam yang tenang serta berbagai aktivitas wisata seperti berkeliling telaga dengan perahu dan menikmati panorama pegunungan.",
+            "facilities": [
+                "Parkir",
+                "Perahu Wisata",
+                "Tempat Duduk",
+                "Toilet",
+                "Warung",
+                "Mushola",
+                "Spot Foto"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "07:00 - 17:00 WIB",
+                "hargaTiket": "Rp 5.000"
+            }
         },
         "b8c7d6e5-f4a3-4b2c-1d0e-9f8a7b6c5d4e": {
             "title": "Sumur Jalatunda",
             "tag": "Sejarah",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Sumur Jalatunda adalah kawah berbentuk sumur raksasa yang memiliki nilai mitologi tinggi. Kedalamannya yang ekstrem dan cerita legenda menjadikannya objek wisata unik. Pengunjung sering mencoba melempar batu sebagai bagian dari tradisi.",
-            "facilities": ["Parkir", "Tangga", "Penjual Batu", "Toilet"],
-            "info": { "operasional": "Senin - Minggu", "jam": "07:00 - 17:00 WIB", "hargaTiket": "Rp 5.000" }
+            "facilities": [
+                "Parkir",
+                "Tangga",
+                "Penjual Batu",
+                "Toilet"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "07:00 - 17:00 WIB",
+                "hargaTiket": "Rp 5.000"
+            }
         },
         "c7d6e5f4-a3b2-4c1d-0e9f-8a7b6c5d4e3f": {
             "title": "Kawah Candradimuka",
             "tag": "Alam",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Kawah Candradimuka dikenal dalam cerita pewayangan sebagai tempat pembentukan Gatotkaca. Kawah ini memiliki sumber air panas alami dengan uap belerang. Lokasinya relatif tenang dan cocok untuk wisata santai.",
-            "facilities": ["Parkir", "Jalur Jalan", "Warung", "Toilet"],
-            "info": { "operasional": "Senin - Minggu", "jam": "08:00 - 17:00 WIB", "hargaTiket": "Rp 5.000" }
+            "facilities": [
+                "Parkir",
+                "Jalur Jalan",
+                "Warung",
+                "Toilet"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "08:00 - 17:00 WIB",
+                "hargaTiket": "Rp 5.000"
+            }
         },
         "d6e5f4a3-b2c1-4d0e-9f8a-7b6c5d4e3f2a": {
             "title": "Curug Pitu",
             "tag": "Alam",
             "country": "Banjarnegara, Indonesia",
             "description": "Curug Pitu merupakan air terjun bertingkat yang tersembunyi di kawasan hutan. Suasana alami dan suara air memberikan pengalaman relaksasi. Trek menuju lokasi cukup menantang namun sepadan dengan keindahannya.",
-            "facilities": ["Parkir", "Toilet", "Ruang Ganti", "Warung"],
-            "info": { "operasional": "Senin - Minggu", "jam": "08:00 - 16:00 WIB", "hargaTiket": "Rp 5.000" }
+            "facilities": [
+                "Parkir",
+                "Toilet",
+                "Ruang Ganti",
+                "Warung"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "08:00 - 16:00 WIB",
+                "hargaTiket": "Rp 5.000"
+            }
         },
         "e5f4a3b2-c1d0-4e9f-8a7b-6c5d4e3f2a1b": {
             "title": "D'Qiano Hot Spring Waterpark",
             "tag": "Rekreasi",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "D'Qiano merupakan waterpark air panas yang memanfaatkan sumber alami Dieng. Cocok untuk relaksasi di suhu dingin, dengan berbagai wahana air dan fasilitas modern.",
-            "facilities": ["Kolam Air Panas", "Waterboom", "Kamar Bilas", "Loker", "Penginapan"],
-            "info": { "operasional": "Senin - Minggu", "jam": "08:00 - 17:00 WIB", "hargaTiket": "Rp 20.000" }
+            "facilities": [
+                "Kolam Air Panas",
+                "Waterboom",
+                "Kamar Bilas",
+                "Loker",
+                "Penginapan"
+            ],
+            "info": {
+                "operasional": "Senin - Minggu",
+                "jam": "08:00 - 17:00 WIB",
+                "hargaTiket": "Rp 20.000"
+            }
         },
         "f4a3b2c1-d0e9-4f8a-7b6c-5d4e3f2a1b0c": {
             "title": "Koboku-no-mori Herb Garden",
             "tag": "Alam",
             "country": "Ohnan, Shimane, Jepang",
             "description": "Taman herbal luas dengan ratusan jenis tanaman yang memberikan pengalaman relaksasi alami. Cocok untuk berjalan santai sambil menikmati aroma tanaman.",
-            "facilities": ["Restoran", "Taman", "Bungalow", "Informasi", "Parkir"],
-            "info": { "operasional": "Rabu - Senin", "jam": "10:00 - 16:00", "hargaTiket": "Gratis" }
+            "facilities": [
+                "Restoran",
+                "Taman",
+                "Bungalow",
+                "Informasi",
+                "Parkir"
+            ],
+            "info": {
+                "operasional": "Rabu - Senin",
+                "jam": "10:00 - 16:00",
+                "hargaTiket": "Gratis"
+            }
         },
         "a3b2c1d0-e9f8-4a7b-6c5d-4e3f2a1b0c9d": {
-            "title": "Uzui Station Park",
+            "title": "Uzui Station",
             "tag": "Sejarah",
             "country": "Ohnan, Shimane, Jepang",
             "description": "Bekas stasiun unik yang kini menjadi taman wisata dengan pemandangan lembah dari ketinggian.",
-            "facilities": ["Tangga", "Spot Foto", "Parkir", "Toilet"],
-            "info": { "operasional": "24 Jam", "jam": "24 Jam", "hargaTiket": "Gratis" }
+            "facilities": [
+                "Tangga",
+                "Spot Foto",
+                "Parkir",
+                "Toilet"
+            ],
+            "info": {
+                "operasional": "24 Jam",
+                "jam": "24 Jam",
+                "hargaTiket": "Gratis"
+            }
         },
         "b2c1d0e9-f8a7-4b6c-5d4e-3f2a1b0c9d8e": {
             "title": "Dangyokei Ravine",
             "tag": "Alam",
             "country": "Ohnan, Shimane, Jepang",
             "description": "Ngarai alami dengan formasi batu unik yang cocok untuk trekking dan menikmati perubahan musim.",
-            "facilities": ["Trekking", "Spot Foto", "Parkir", "Toilet"],
-            "info": { "operasional": "24 Jam", "jam": "24 Jam", "hargaTiket": "Gratis" }
+            "facilities": [
+                "Trekking",
+                "Spot Foto",
+                "Parkir",
+                "Toilet"
+            ],
+            "info": {
+                "operasional": "24 Jam",
+                "jam": "24 Jam",
+                "hargaTiket": "Gratis"
+            }
         },
         "c1d0e9f8-a7b6-4c5d-4e3f-2a1b0c9d8e7f": {
             "title": "Mizuho Highland",
             "tag": "Petualangan",
             "country": "Ohnan, Shimane, Jepang",
             "description": "Resor outdoor yang berfungsi sebagai ski resort saat musim dingin dan area camping saat musim panas.",
-            "facilities": ["Ski", "Camping", "Sauna", "Restoran", "Sewa"],
-            "info": { "operasional": "Jumat - Selasa", "jam": "09:00 - 17:00", "hargaTiket": "Mulai \u00a58.000" }
+            "facilities": [
+                "Ski",
+                "Camping",
+                "Sauna",
+                "Restoran",
+                "Sewa"
+            ],
+            "info": {
+                "operasional": "Jumat - Selasa",
+                "jam": "09:00 - 17:00",
+                "hargaTiket": "Mulai ¥8.000"
+            }
         },
         "d0e9f8a7-b6c5-4d4e-3f2a-1b0c9d8e7f6a": {
             "title": "Kiri-no-yu Onsen",
             "tag": "Relaksasi",
             "country": "Ohnan, Shimane, Jepang",
             "description": "Onsen tradisional dengan kolam indoor dan outdoor yang memanfaatkan air panas alami.",
-            "facilities": ["Kolam", "Ruang Santai", "Kafetaria", "Loker"],
-            "info": { "operasional": "Rabu - Senin", "jam": "10:00 - 21:00", "hargaTiket": "\u00a5600" }
-        },
-        "e9f8a7b6-c5d4-4e3f-2a1b-0c9d8e7f6a5b": {
-            "title": "Ohnan Ryokou-mura",
-            "tag": "Rekreasi",
-            "country": "Ohnan, Shimane, Jepang",
-            "description": "Area wisata keluarga dengan fasilitas camping, panjat tebing, dan wahana air.",
-            "facilities": ["Waterpark", "Camping", "Panjat Tebing", "Toilet", "Parkir"],
-            "info": { "operasional": "Senin - Minggu", "jam": "09:00 - 17:00", "hargaTiket": "Variatif" }
+            "facilities": [
+                "Kolam",
+                "Ruang Santai",
+                "Kafetaria",
+                "Loker"
+            ],
+            "info": {
+                "operasional": "Rabu - Senin",
+                "jam": "10:00 - 21:00",
+                "hargaTiket": "¥600"
+            }
         },
         "f8a7b6c5-d4e3-4f2a-1b0c-9d8e7f6a5b4c": {
             "title": "Hanamomo-no-Sato",
             "tag": "Alam",
             "country": "Ohnan, Shimane, Jepang",
             "description": "Area bunga persik yang mekar di musim semi dengan panorama sawah bertingkat.",
-            "facilities": ["Spot Foto", "Jalur Jalan", "Parkir"],
-            "info": { "operasional": "Musiman", "jam": "08:00 - 17:00", "hargaTiket": "Gratis" }
+            "facilities": [
+                "Spot Foto",
+                "Jalur Jalan",
+                "Parkir"
+            ],
+            "info": {
+                "operasional": "Musiman",
+                "jam": "08:00 - 17:00",
+                "hargaTiket": "Gratis"
+            }
         },
         "a7b6c5d4-e3f2-4a1b-0c9d-8e7f6a5b4c3d": {
             "title": "Kuki Silver Mine Ruins",
             "tag": "Sejarah",
             "country": "Ohnan, Shimane, Jepang",
             "description": "Situs tambang perak kuno yang memberikan wawasan sejarah pertambangan Jepang.",
-            "facilities": ["Informasi", "Jalur", "Spot Foto"],
-            "info": { "operasional": "24 Jam", "jam": "24 Jam", "hargaTiket": "Gratis" }
-        },
-        "b6c5d4e3-f2a1-4b0c-9d8e-7f6a5b4c3d2e": {
-            "title": "Banryukyo Gorge",
-            "tag": "Alam",
-            "country": "Ohnan, Shimane, Jepang",
-            "description": "Ngarai alami dengan suasana hening dan aliran sungai jernih, cocok untuk relaksasi.",
-            "facilities": ["Jalur Alam", "Tempat Duduk", "Toilet"],
-            "info": { "operasional": "24 Jam", "jam": "24 Jam", "hargaTiket": "Gratis" }
+            "facilities": [
+                "Informasi",
+                "Jalur",
+                "Spot Foto"
+            ],
+            "info": {
+                "operasional": "24 Jam",
+                "jam": "24 Jam",
+                "hargaTiket": "Gratis"
+            }
         },
         "c5d4e3f2-a1b0-4c9d-8e7f-6a5b4c3d2e1f": {
             "title": "Suwa Shrine",
             "tag": "Budaya",
             "country": "Ohnan, Shimane, Jepang",
             "description": "Kuil bersejarah dengan jalan masuk yang diapit pohon cedar besar, menciptakan suasana sakral.",
-            "facilities": ["Kuil", "Jalur Jalan", "Parkir"],
-            "info": { "operasional": "24 Jam", "jam": "24 Jam", "hargaTiket": "Gratis" }
+            "facilities": [
+                "Kuil",
+                "Jalur Jalan",
+                "Parkir"
+            ],
+            "info": {
+                "operasional": "24 Jam",
+                "jam": "24 Jam",
+                "hargaTiket": "Gratis"
+            }
         }
     },
     "show": {
@@ -323,5 +497,12 @@
         "opening_hours": "Jam Buka",
         "not_found": "Destinasi Tidak Ditemukan",
         "back_to_home": "Kembali ke Beranda"
+    },
+    "chat": {
+        "greeting": "Halo 👋 Saya Intera, asisten wisata internasional untuk Indonesia dan Jepang. Ada yang bisa saya bantu?",
+        "error": "Maaf, terjadi kesalahan saat memproses pertanyaan. Mohon coba lagi nanti.",
+        "login_prompt": "Silakan login untuk bertanya kepada Intera AI",
+        "login_button": "Login Sekarang",
+        "placeholder": "Ketik pesan anda di sini..."
     }
 }

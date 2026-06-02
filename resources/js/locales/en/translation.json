@@ -140,176 +140,350 @@
             "tag": "Nature",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Sikidang Crater is the most accessible active volcanic crater in the Dieng area. Its geothermal activity is clearly visible through hot steam bursts and boiling mud pools that move around. This phenomenon makes it both educational and visually interesting. Visitors can also try boiling eggs in a small crater as a unique experience.",
-            "facilities": ["Parking Area", "Toilet", "Food Stalls", "Photo Spots", "Souvenir Shop"],
-            "info": { "operasional": "Monday - Sunday", "jam": "07:00 - 17:00 WIB", "hargaTiket": "IDR 20,000" }
+            "facilities": [
+                "Parking Area",
+                "Toilet",
+                "Food Stalls",
+                "Photo Spots",
+                "Souvenir Shop"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "07:00 - 17:00 WIB",
+                "hargaTiket": "IDR 20,000"
+            }
         },
         "a7b8c9d0-e1f2-4a3b-8c7d-9e0f1a2b3c4d": {
             "title": "Kompleks Candi Arjuna",
             "tag": "Historical",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Arjuna Temple Complex is an ancient Hindu heritage estimated to date back to the 7th century. Surrounded by mountain landscapes and the thin mist typical of Dieng, this area provides a sacred and calming atmosphere. Besides its historical value, this location is often used for cultural activities and photography.",
-            "facilities": ["Information Center", "Pedestrian Area", "Toilet", "Photo Spots", "Garden"],
-            "info": { "operasional": "Monday - Sunday", "jam": "07:00 - 17:00 WIB", "hargaTiket": "IDR 20,000" }
+            "facilities": [
+                "Information Center",
+                "Pedestrian Area",
+                "Toilet",
+                "Photo Spots",
+                "Garden"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "07:00 - 17:00 WIB",
+                "hargaTiket": "IDR 20,000"
+            }
         },
         "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e": {
             "title": "Telaga Warna",
             "tag": "Nature",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Telaga Warna is known for its water color change phenomenon influenced by mineral content and sunlight. The combination of green, yellow, and bluish colors creates a unique view. The area around the lake also provides light trekking paths with forest and mountain panoramas.",
-            "facilities": ["Trekking Path", "Gazebo", "Toilet", "Food Stalls", "Photo Spots"],
-            "info": { "operasional": "Monday - Sunday", "jam": "06:30 - 16:30 WIB", "hargaTiket": "IDR 22,000 (Domestic) / IDR 169,000 (Foreign)" }
+            "facilities": [
+                "Trekking Path",
+                "Gazebo",
+                "Toilet",
+                "Food Stalls",
+                "Photo Spots"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "06:30 - 16:30 WIB",
+                "hargaTiket": "IDR 22,000 (Domestic) / IDR 169,000 (Foreign)"
+            }
         },
         "c4d5e6f7-a8b9-4c0d-1e2f-3a4b5c6d7e8f": {
             "title": "Bukit Sikunir",
             "tag": "Adventure",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Sikunir Hill is a popular location to enjoy the sunrise with mountain panoramas. The climb is relatively short but provides spectacular views in the form of a sea of clouds and mountain silhouettes. The best time to visit is in the early morning.",
-            "facilities": ["Parking Area", "Prayer Room", "Stalls", "Toilet", "Climbing Path"],
-            "info": { "operasional": "Monday - Sunday", "jam": "02:00 - 18:00 WIB", "hargaTiket": "IDR 15,000" }
+            "facilities": [
+                "Parking Area",
+                "Prayer Room",
+                "Stalls",
+                "Toilet",
+                "Climbing Path"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "02:00 - 18:00 WIB",
+                "hargaTiket": "IDR 15,000"
+            }
         },
         "d9e0f1a2-b3c4-4d5e-6f7a-8b9c0d1e2f3a": {
             "title": "Arung Jeram Sungai Serayu",
             "tag": "Adventure",
             "country": "Banjarnegara, Indonesia",
             "description": "Serayu River offers rafting activities with various difficulty levels. Besides the adrenaline rush, visitors can enjoy natural views of green cliffs and rice fields. This activity is professionally managed with safety standards.",
-            "facilities": ["Equipment", "Guide", "Basecamp", "Shower Room", "Restaurant"],
-            "info": { "operasional": "Monday - Sunday", "jam": "08:00 - 16:00 WIB", "hargaTiket": "From IDR 200,000" }
+            "facilities": [
+                "Equipment",
+                "Guide",
+                "Basecamp",
+                "Shower Room",
+                "Restaurant"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "08:00 - 16:00 WIB",
+                "hargaTiket": "From IDR 200,000"
+            }
         },
         "e4f5a6b7-c8d9-4e0f-1a2b-3c4d5e6f7a8b": {
             "title": "TRMS Serulingmas",
             "tag": "Recreation",
             "country": "Banjarnegara, Indonesia",
             "description": "TRMS Serulingmas is a recreation park and zoo that provides wildlife education. Additional facilities like swimming pools and playgrounds make it suitable for families. The environment is well-maintained with an educational tourism concept.",
-            "facilities": ["Animal Cages", "Swimming Pool", "Playground", "Toilet", "Parking"],
-            "info": { "operasional": "Monday - Sunday", "jam": "07:00 - 16:00 WIB", "hargaTiket": "IDR 20,000" }
+            "facilities": [
+                "Animal Cages",
+                "Swimming Pool",
+                "Playground",
+                "Toilet",
+                "Parking"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "07:00 - 16:00 WIB",
+                "hargaTiket": "IDR 20,000"
+            }
         },
         "f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c": {
             "title": "Surya Yudha Park",
             "tag": "Recreation",
             "country": "Banjarnegara, Indonesia",
             "description": "Surya Yudha Park is an integrated tourism park with waterpark facilities, a cinema, and a hotel. This place is designed as a family entertainment destination with various interesting rides and complete facilities.",
-            "facilities": ["Waterpark", "Cinema", "Hotel", "Cafeteria", "Locker"],
-            "info": { "operasional": "Monday - Sunday", "jam": "08:00 - 17:00 WIB", "hargaTiket": "IDR 25,000 - 35,000" }
+            "facilities": [
+                "Waterpark",
+                "Cinema",
+                "Hotel",
+                "Cafeteria",
+                "Locker"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "08:00 - 17:00 WIB",
+                "hargaTiket": "IDR 25,000 - 35,000"
+            }
         },
         "a9b8c7d6-e5f4-4a3b-2c1d-0e9f8a7b6c5d": {
-            "title": "Telaga Merdada",
+            "title": "Telaga Menjer",
             "tag": "Nature",
-            "country": "Dieng, Banjarnegara, Indonesia",
-            "description": "Telaga Merdada is the widest lake in Dieng, formed from a natural basin. Its water comes from rainfall, giving it a calm and spacious appearance. Surrounded by agricultural areas, this place is perfect for relaxation.",
-            "facilities": ["Parking", "Boat", "Seating", "Toilet", "Stalls"],
-            "info": { "operasional": "Monday - Sunday", "jam": "07:00 - 16:00 WIB", "hargaTiket": "IDR 5,000" }
+            "country": "Garung, Wonosobo, Indonesia",
+            "description": "Menjer Lake is a natural lake located at the foot of the Dieng Mountains, Wonosobo. Surrounded by green hills and cool air, this lake offers tranquil natural scenery and various tourist activities such as boating around the lake and enjoying the mountain panorama.",
+            "facilities": [
+                "Parking",
+                "Tourist Boat",
+                "Seating Area",
+                "Toilet",
+                "Food Stalls",
+                "Prayer Room",
+                "Photo Spots"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "07:00 AM - 05:00 PM",
+                "hargaTiket": "Rp 5.000"
+            }
         },
         "b8c7d6e5-f4a3-4b2c-1d0e-9f8a7b6c5d4e": {
             "title": "Sumur Jalatunda",
             "tag": "Historical",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Sumur Jalatunda is a giant well-shaped crater with high mythological value. Its extreme depth and legendary stories make it a unique tourist object. Visitors often try to throw stones as part of a tradition.",
-            "facilities": ["Parking", "Stairs", "Stone Sellers", "Toilet"],
-            "info": { "operasional": "Monday - Sunday", "jam": "07:00 - 17:00 WIB", "hargaTiket": "IDR 5,000" }
+            "facilities": [
+                "Parking",
+                "Stairs",
+                "Stone Sellers",
+                "Toilet"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "07:00 - 17:00 WIB",
+                "hargaTiket": "IDR 5,000"
+            }
         },
         "c7d6e5f4-a3b2-4c1d-0e9f-8a7b6c5d4e3f": {
             "title": "Kawah Candradimuka",
             "tag": "Nature",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "Candradimuka Crater is known in puppetry stories as the place where Gatotkaca was formed. This crater has natural hot springs with sulfur steam. The location is relatively quiet and suitable for leisure travel.",
-            "facilities": ["Parking", "Walking Path", "Stalls", "Toilet"],
-            "info": { "operasional": "Monday - Sunday", "jam": "08:00 - 17:00 WIB", "hargaTiket": "IDR 5,000" }
+            "facilities": [
+                "Parking",
+                "Walking Path",
+                "Stalls",
+                "Toilet"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "08:00 - 17:00 WIB",
+                "hargaTiket": "IDR 5,000"
+            }
         },
         "d6e5f4a3-b2c1-4d0e-9f8a-7b6c5d4e3f2a": {
             "title": "Curug Pitu",
             "tag": "Nature",
             "country": "Banjarnegara, Indonesia",
             "description": "Curug Pitu is a tiered waterfall hidden in a forest area. The natural atmosphere and the sound of water provide a relaxing experience. The trek to the location is quite challenging but rewarding for its beauty.",
-            "facilities": ["Parking", "Toilet", "Changing Room", "Stalls"],
-            "info": { "operasional": "Monday - Sunday", "jam": "08:00 - 16:00 WIB", "hargaTiket": "IDR 5,000" }
+            "facilities": [
+                "Parking",
+                "Toilet",
+                "Changing Room",
+                "Stalls"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "08:00 - 16:00 WIB",
+                "hargaTiket": "IDR 5,000"
+            }
         },
         "e5f4a3b2-c1d0-4e9f-8a7b-6c5d4e3f2a1b": {
             "title": "D'Qiano Hot Spring Waterpark",
             "tag": "Recreation",
             "country": "Dieng, Banjarnegara, Indonesia",
             "description": "D'Qiano is a hot spring waterpark that utilizes Dieng's natural sources. Perfect for relaxation in cold temperatures, with various water rides and modern facilities.",
-            "facilities": ["Hot Spring Pool", "Waterboom", "Shower Room", "Locker", "Inn"],
-            "info": { "operasional": "Monday - Sunday", "jam": "08:00 - 17:00 WIB", "hargaTiket": "IDR 20,000" }
+            "facilities": [
+                "Hot Spring Pool",
+                "Waterboom",
+                "Shower Room",
+                "Locker",
+                "Inn"
+            ],
+            "info": {
+                "operasional": "Monday - Sunday",
+                "jam": "08:00 - 17:00 WIB",
+                "hargaTiket": "IDR 20,000"
+            }
         },
         "f4a3b2c1-d0e9-4f8a-7b6c-5d4e3f2a1b0c": {
             "title": "Koboku-no-mori Herb Garden",
             "tag": "Nature",
             "country": "Ohnan, Shimane, Japan",
             "description": "A vast herb garden with hundreds of plant types providing a natural relaxation experience. Perfect for walking while enjoying the aroma of plants.",
-            "facilities": ["Restaurant", "Garden", "Bungalow", "Information", "Parking"],
-            "info": { "operasional": "Wednesday - Monday", "jam": "10:00 - 16:00", "hargaTiket": "Free" }
+            "facilities": [
+                "Restaurant",
+                "Garden",
+                "Bungalow",
+                "Information",
+                "Parking"
+            ],
+            "info": {
+                "operasional": "Wednesday - Monday",
+                "jam": "10:00 - 16:00",
+                "hargaTiket": "Free"
+            }
         },
         "a3b2c1d0-e9f8-4a7b-6c5d-4e3f2a1b0c9d": {
-            "title": "Uzui Station Park",
+            "title": "Uzui Station",
             "tag": "Historical",
             "country": "Ohnan, Shimane, Japan",
             "description": "A unique former station that is now a tourist park with valley views from a height.",
-            "facilities": ["Stairs", "Photo Spots", "Parking", "Toilet"],
-            "info": { "operasional": "24 Hours", "jam": "24 Hours", "hargaTiket": "Free" }
+            "facilities": [
+                "Stairs",
+                "Photo Spots",
+                "Parking",
+                "Toilet"
+            ],
+            "info": {
+                "operasional": "24 Hours",
+                "jam": "24 Hours",
+                "hargaTiket": "Free"
+            }
         },
         "b2c1d0e9-f8a7-4b6c-5d4e-3f2a1b0c9d8e": {
             "title": "Dangyokei Ravine",
             "tag": "Nature",
             "country": "Ohnan, Shimane, Japan",
             "description": "A natural ravine with unique rock formations suitable for trekking and enjoying seasonal changes.",
-            "facilities": ["Trekking", "Photo Spots", "Parking", "Toilet"],
-            "info": { "operasional": "24 Hours", "jam": "24 Hours", "hargaTiket": "Free" }
+            "facilities": [
+                "Trekking",
+                "Photo Spots",
+                "Parking",
+                "Toilet"
+            ],
+            "info": {
+                "operasional": "24 Hours",
+                "jam": "24 Hours",
+                "hargaTiket": "Free"
+            }
         },
         "c1d0e9f8-a7b6-4c5d-4e3f-2a1b0c9d8e7f": {
             "title": "Mizuho Highland",
             "tag": "Adventure",
             "country": "Ohnan, Shimane, Japan",
             "description": "An outdoor resort that functions as a ski resort during winter and a camping area during summer.",
-            "facilities": ["Ski", "Camping", "Sauna", "Restaurant", "Rental"],
-            "info": { "operasional": "Friday - Tuesday", "jam": "09:00 - 17:00", "hargaTiket": "From \u00a58,000" }
+            "facilities": [
+                "Ski",
+                "Camping",
+                "Sauna",
+                "Restaurant",
+                "Rental"
+            ],
+            "info": {
+                "operasional": "Friday - Tuesday",
+                "jam": "09:00 - 17:00",
+                "hargaTiket": "From ¥8,000"
+            }
         },
         "d0e9f8a7-b6c5-4d4e-3f2a-1b0c9d8e7f6a": {
             "title": "Kiri-no-yu Onsen",
             "tag": "Relaxation",
             "country": "Ohnan, Shimane, Japan",
             "description": "Traditional onsen with indoor and outdoor pools utilizing natural hot springs.",
-            "facilities": ["Pool", "Lounge", "Cafeteria", "Locker"],
-            "info": { "operasional": "Wednesday - Monday", "jam": "10:00 - 21:00", "hargaTiket": "\u00a5600" }
-        },
-        "e9f8a7b6-c5d4-4e3f-2a1b-0c9d8e7f6a5b": {
-            "title": "Ohnan Ryokou-mura",
-            "tag": "Recreation",
-            "country": "Ohnan, Shimane, Japan",
-            "description": "Family tourist area with camping facilities, rock climbing, and water rides.",
-            "facilities": ["Waterpark", "Camping", "Rock Climbing", "Toilet", "Parking"],
-            "info": { "operasional": "Monday - Sunday", "jam": "09:00 - 17:00", "hargaTiket": "Various" }
+            "facilities": [
+                "Pool",
+                "Lounge",
+                "Cafeteria",
+                "Locker"
+            ],
+            "info": {
+                "operasional": "Wednesday - Monday",
+                "jam": "10:00 - 21:00",
+                "hargaTiket": "¥600"
+            }
         },
         "f8a7b6c5-d4e3-4f2a-1b0c-9d8e7f6a5b4c": {
             "title": "Hanamomo-no-Sato",
             "tag": "Nature",
             "country": "Ohnan, Shimane, Japan",
             "description": "A peach blossom area that blooms in spring with a panorama of terraced rice fields.",
-            "facilities": ["Photo Spots", "Walking Path", "Parking"],
-            "info": { "operasional": "Seasonal", "jam": "08:00 - 17:00", "hargaTiket": "Free" }
+            "facilities": [
+                "Photo Spots",
+                "Walking Path",
+                "Parking"
+            ],
+            "info": {
+                "operasional": "Seasonal",
+                "jam": "08:00 - 17:00",
+                "hargaTiket": "Free"
+            }
         },
         "a7b6c5d4-e3f2-4a1b-0c9d-8e7f6a5b4c3d": {
             "title": "Kuki Silver Mine Ruins",
             "tag": "Historical",
             "country": "Ohnan, Shimane, Japan",
             "description": "Ancient silver mine site providing insights into Japanese mining history.",
-            "facilities": ["Information", "Path", "Photo Spots"],
-            "info": { "operasional": "24 Hours", "jam": "24 Hours", "hargaTiket": "Free" }
-        },
-        "b6c5d4e3-f2a1-4b0c-9d8e-7f6a5b4c3d2e": {
-            "title": "Banryukyo Gorge",
-            "tag": "Nature",
-            "country": "Ohnan, Shimane, Japan",
-            "description": "A natural ravine with a quiet atmosphere and clear river flow, perfect for relaxation.",
-            "facilities": ["Nature Path", "Seating", "Toilet"],
-            "info": { "operasional": "24 Hours", "jam": "24 Hours", "hargaTiket": "Free" }
+            "facilities": [
+                "Information",
+                "Path",
+                "Photo Spots"
+            ],
+            "info": {
+                "operasional": "24 Hours",
+                "jam": "24 Hours",
+                "hargaTiket": "Free"
+            }
         },
         "c5d4e3f2-a1b0-4c9d-8e7f-6a5b4c3d2e1f": {
             "title": "Suwa Shrine",
             "tag": "Cultural",
             "country": "Ohnan, Shimane, Japan",
             "description": "Historic shrine with an entrance flanked by large cedar trees, creating a sacred atmosphere.",
-            "facilities": ["Shrine", "Walking Path", "Parking"],
-            "info": { "operasional": "24 Hours", "jam": "24 Hours", "hargaTiket": "Free" }
+            "facilities": [
+                "Shrine",
+                "Walking Path",
+                "Parking"
+            ],
+            "info": {
+                "operasional": "24 Hours",
+                "jam": "24 Hours",
+                "hargaTiket": "Free"
+            }
         }
     },
     "show": {
@@ -323,5 +497,12 @@
         "opening_hours": "Opening Hours",
         "not_found": "Destination Not Found",
         "back_to_home": "Back to Home"
+    },
+    "chat": {
+        "greeting": "Hello 👋 I am Intera, an international travel assistant for Indonesia and Japan. How can I help you?",
+        "error": "Sorry, an error occurred while processing your question. Please try again later.",
+        "login_prompt": "Please login to ask Intera AI",
+        "login_button": "Login Now",
+        "placeholder": "Type your message here..."
     }
 }

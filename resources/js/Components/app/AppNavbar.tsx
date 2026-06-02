@@ -5,11 +5,14 @@ import { HiMenuAlt3, HiX, HiChevronDown } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
 
 import LogoColor from "../../../assets/svg/logo-color.svg";
+import IdFlag from "../../../assets/icon/id.png";
+import JpFlag from "../../../assets/icon/jp.png";
+import UkFlag from "../../../assets/icon/uk.png";
 
 const LANGUAGES = [
-    { code: "id", label: "Indonesia" },
-    { code: "en", label: "English" },
-    { code: "jp", label: "日本語" },
+    { code: "id", label: "Indonesia", icon: IdFlag },
+    { code: "en", label: "English", icon: UkFlag },
+    { code: "jp", label: "日本語", icon: JpFlag },
 ];
 
 const Navbar = () => {
@@ -94,32 +97,36 @@ const Navbar = () => {
                             onClick={() => setOpenLang(!openLang)}
                             className="flex items-center gap-2 text-sm text-gray-700 hover:text-primary"
                         >
+                            {selectedLang?.icon && (
+                                <img src={selectedLang.icon} alt={selectedLang.label} className="w-5 h-auto rounded-[2px]" />
+                            )}
                             {selectedLang?.label}
                             <HiChevronDown />
                         </button>
 
                         {openLang && (
-                            <div className="absolute right-24 top-12 bg-white rounded-xl shadow-lg py-2 w-36 text-sm">
+                            <div className="absolute right-0 top-12 bg-white rounded-xl shadow-lg py-2 w-36 text-sm">
                                 {LANGUAGES.map(lang => (
                                     <button
                                         key={lang.code}
                                         onClick={() => changeLanguage(lang.code)}
-                                        className={`w-full text-left px-4 py-2 hover:bg-gray-100 ${i18n.language === lang.code
+                                        className={`w-full flex items-center gap-2 text-left px-4 py-2 hover:bg-gray-100 ${i18n.language === lang.code
                                                 ? "font-semibold text-primary"
                                                 : ""
                                             }`}
                                     >
+                                        <img src={lang.icon} alt={lang.label} className="w-5 h-auto rounded-[2px]" />
                                         {lang.label}
                                     </button>
                                 ))}
                             </div>
                         )}
 
-                        <Link href="/get-started">
+                        {/* <Link href="/get-started">
                             <Button>
                                 {t('navbar.get_started')}
                             </Button>
-                        </Link>
+                        </Link> */}
                     </div>
 
                     {/* Mobile Toggle */}
@@ -143,7 +150,12 @@ const Navbar = () => {
                                 onClick={() => setOpenLang(!openLang)}
                                 className="w-full flex items-center justify-between px-4 py-3 rounded-sm bg-gray-100 text-sm"
                             >
-                                {selectedLang?.label}
+                                <div className="flex items-center gap-2">
+                                    {selectedLang?.icon && (
+                                        <img src={selectedLang.icon} alt={selectedLang.label} className="w-5 h-auto rounded-[2px]" />
+                                    )}
+                                    {selectedLang?.label}
+                                </div>
                                 <HiChevronDown
                                     className={`transition-transform ${openLang ? "rotate-180" : ""
                                         }`}
@@ -156,11 +168,12 @@ const Navbar = () => {
                                         <button
                                             key={lang.code}
                                             onClick={() => changeLanguage(lang.code)}
-                                            className={`w-full text-left px-4 py-3 text-sm hover:bg-gray-100 ${i18n.language === lang.code
+                                            className={`w-full flex items-center gap-2 text-left px-4 py-3 text-sm hover:bg-gray-100 ${i18n.language === lang.code
                                                     ? "font-semibold text-primary"
                                                     : ""
                                                 }`}
                                         >
+                                            <img src={lang.icon} alt={lang.label} className="w-5 h-auto rounded-[2px]" />
                                             {lang.label}
                                         </button>
                                     ))}
@@ -191,11 +204,11 @@ const Navbar = () => {
                                 </Link>
                             ))}
 
-                            <Link href="/get-started" onClick={() => setOpenMenu(false)}>
+                            {/* <Link href="/get-started" onClick={() => setOpenMenu(false)}>
                                 <Button className="w-full mt-2">
                                     {t('navbar.get_started')}
                                 </Button>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 )}

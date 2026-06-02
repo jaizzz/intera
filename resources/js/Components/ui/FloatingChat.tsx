@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
+import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiOutlineChatBubbleOvalLeftEllipsis, HiXMark } from "react-icons/hi2";
 import { IoSend } from "react-icons/io5";
@@ -38,6 +39,7 @@ function TypingIndicator() {
 }
 
 export default function FloatingChat({ isAuthenticated }: FloatingChatProps) {
+    const { t } = useTranslation();
     const STORAGE_KEY = "intera_chat_history";
     const EXPIRATION_TIME = 10 * 60 * 1000;
 
@@ -60,7 +62,7 @@ export default function FloatingChat({ isAuthenticated }: FloatingChatProps) {
                 setMessages([
                     {
                         role: "ai",
-                        text: "Halo 👋 Saya Intera, asisten wisata internasional untuk Indonesia dan Jepang. Ada yang bisa saya bantu?",
+                        text: t("chat.greeting"),
                     },
                 ]);
             } else {
@@ -70,7 +72,7 @@ export default function FloatingChat({ isAuthenticated }: FloatingChatProps) {
             setMessages([
                 {
                     role: "ai",
-                    text: "Halo 👋 Saya Intera, asisten wisata internasional untuk Indonesia dan Jepang. Ada yang bisa saya bantu?",
+                    text: t("chat.greeting"),
                 },
             ]);
         }
@@ -98,7 +100,7 @@ export default function FloatingChat({ isAuthenticated }: FloatingChatProps) {
                     setMessages([
                         {
                             role: "ai",
-                            text: "Halo 👋 Saya Intera, asisten wisata internasional untuk Indonesia dan Jepang. Ada yang bisa saya bantu?",
+                            text: t("chat.greeting"),
                         },
                     ]);
                 }
@@ -139,7 +141,7 @@ export default function FloatingChat({ isAuthenticated }: FloatingChatProps) {
                 ...prev,
                 {
                     role: "ai",
-                    text: "Maaf, terjadi kesalahan saat memproses pertanyaan. Mohon coba lagi nanti.",
+                    text: t("chat.error"),
                 },
             ]);
         } finally {
@@ -252,7 +254,7 @@ export default function FloatingChat({ isAuthenticated }: FloatingChatProps) {
                                             }`}
                                     >
                                         <div className="prose prose-sm dark:prose-invert prose-p:my-0 prose-headings:text-inherit prose-strong:text-inherit max-w-none">
-                                            <ReactMarkdown>{msg.text}</ReactMarkdown>
+                                            <ReactMarkdown>{index === 0 ? t("chat.greeting") : msg.text}</ReactMarkdown>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -278,12 +280,12 @@ export default function FloatingChat({ isAuthenticated }: FloatingChatProps) {
                         <div className="p-4 bg-white dark:bg-zinc-900 border-t dark:border-zinc-800">
                             {!isAuthenticated ? (
                                 <div className="text-center py-2">
-                                    <p className="text-xs text-gray-500 mb-2">Silakan login untuk bertanya kepada Intera AI</p>
+                                    <p className="text-xs text-gray-500 mb-2">{t("chat.login_prompt")}</p>
                                     <a 
                                         href="/login" 
                                         className="text-xs font-semibold text-primary hover:underline"
                                     >
-                                        Login Sekarang
+                                        {t("chat.login_button")}
                                     </a>
                                 </div>
                             ) : (
@@ -306,7 +308,7 @@ export default function FloatingChat({ isAuthenticated }: FloatingChatProps) {
                                                 sendMessage();
                                             }
                                         }}
-                                        placeholder="Ketik pesan anda di sini..."
+                                        placeholder={t("chat.placeholder")}
                                         disabled={loading}
                                         className="flex-1 resize-none bg-transparent border-none px-2 py-1.5 text-sm focus:border-none focus:outline-none focus:ring-0 dark:text-white placeholder:text-gray-400 dark:placeholder:text-zinc-500 max-h-32 custom-scrollbar"
                                     />
